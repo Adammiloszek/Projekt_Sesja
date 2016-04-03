@@ -1,0 +1,12 @@
+Klon Pacmana
+
+Developerzy:
+Bartek, Kamil, Ola
+
+Zarys rozgrywki:
+Gra składa się z kliku etapów - symbolizują one zadania na egzaminie. By zdać trzeba przejść wszystkie. Gramy naszym studentem - Pacmanem. Level to labirynt (sala egzaminacyjna), po którym porozsiewane są kropki, które są punktami potrzebnymi do zaliczenia zadania. Przeciwnicy - duszki - to wykładowcy (im trudniejszy przedmiot, tym więcej przeciwników do pilnowania), chodzą po całym labiryncie. Na poziomie występują "duże" kropki - ściągi przydatne do rozwiązania teorii zadania, po zebraniu których student może "zjeść" wykładowcę, aby nie przeszkadzał przez jakiś czas.
+
+Wpływ statystyk na rozgrywkę:
+Wiedza - im większa wiedza, tym mniej pilnujących wykładowców - mniej duszków.
+Ściąganie - więcej dużych kropek pozwalających na "zjedzenie" wykładowców.
+Znajomości - im większe znajomości tym większa szansa, że ktoś podrzuci nam rozwiązanie zadania, czyli nie będziemy musieli przechodzić danego etapu.
