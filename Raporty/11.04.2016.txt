@@ -1,0 +1,13 @@
+11.04.16
+
+Organizacja:
+Grupê 1 podzielono na 2 nowe grupy:
+Grupa 1: Bartek Seliga, Ola Ciok, Kamil Witkowski;
+Grupa 4: Mateusz Jaworski, Karol Kostrzewa, Pawe³ Meuszyñski.
+
+Grupa 4:
+- zapoznanie siê z tutorialem dotycz¹cym budowy minigry 'arkanoid';
+- rozpoczêcie prac implementacyjnych (poruszaj¹ca siê kulka i platforma);
+- zlecenie stworzenia grafik do gry;
+
+Nie oddano innych raportów.
