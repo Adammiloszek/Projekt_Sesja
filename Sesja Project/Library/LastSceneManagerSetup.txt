@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/chodzenie.unity
+- path: Assets/pacman.unity
   isLoaded: 1
   isActive: 1
