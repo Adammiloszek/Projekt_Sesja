@@ -1,0 +1,13 @@
+﻿Gra Ściąganie
+
+Developerzy:
+	Adrian, Bartek K
+
+Ogólny zarys:
+Gra polega na ściąganiu poprzez chodzenie po klasie i unikaniu wzroku profesora. By zdać trzeba wystarczająco długo stać obok osoby od której można ściagać, tak aby wypełnił się pasek postępu, a następnie wrócić na swoje miejsce. Level to sala egzaminacyjna, w której znajdują się ławki przy których siedzą inni studenci. Ściągać możemy tylko od kilku studentów na sali. Przegrywamy jeśli podczas ściągania dosięgnie nas wzrok profesora.
+
+
+Wpływ statystyk na rozgrywkę:
+	- wiedza - szybciej ładujący się pasek ściagania,
+	- ściąganie - mniejsze pole widzenia patrolującego profesora,
+	- znajomości - większa liczba osób od których można ściągać.
