@@ -1,0 +1,42 @@
+Grupa 1:
+- Podzielenie pracy na etapy
+
+Bartek Seliga:
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+- Stworzenie progresywnej listy "todo"
+- Oddanie raportu w terminie
+
+Arek Murawski:
+- Opracowanie "bonusy"
+
+Kamil Reszka:
+
+Piotr Cieniak:
+- Przeanalizowano Unity oraz Unreal Engine
+(Oczekiwanie na taski)
+
+- Opracowanie tutoriale
+(Oczekiwanie na taski)
+
+Grupa 3:
+Bartek Koziel:
+- Zaprojektowanie i implementacja obszaru gry
+
+Adrian Wojciechowski:
+- Stworzenie postaci gracza
+- Oddanie raportu w terminie
+
+Grupa 4:
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+brak raportu
+
+Grafik:
+- Oddanie raportu w terminie

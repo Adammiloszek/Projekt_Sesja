@@ -9,7 +9,7 @@ Koncept przebiegu rozgrywki:
 (dokładne opisy poszczególnych etapów w oddzielnych plikach - dodawane i uzupełniane na bieżąco)
 1. Menu - Start gry, wczytanie, wyjście.
 2. Rozdzielanie punktów na statystyki (wstępnie 3 statystyki np. wiedza, ściąganie, znajomości).
-3. Etap przejściowy między minigierkami - hub a'la Pokemony, gdzie trzeba dotrzeć do sali, w której odbywa się egzamin. W tej części można znaleźć jakieś power-upy do egzaminu, czyli zwiększenie statystyk. Ograniczenia czasu (?). Numery sal generowane losowo (żeby etap był nieco bardziej skomplikowany)/ Mapa generowana proceduralnie (randomowa mapa) (?).
+3. Etap przejściowy między minigierkami - "Mapa wydziału" (opis: Mapa.txt)
 4. Minigry, jako egzamin:
 	4.1. Klon Arkanoida - statystyki wpływają na wielkość kijka odbijającego kulkę, szybkość ruchu kulki, ilość bloczków (?)
 	4.2. Ściąganie - (opis: Sciaganie.txt)
