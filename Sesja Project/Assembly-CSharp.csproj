@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Pacman\scripts\PacmanMove.cs" />
+     <Compile Include="Assets\Pacman\scripts\pacdot.cs" />
      <Compile Include="Assets\inicjacja.cs" />
      <Compile Include="Assets\input.cs" />
  <Reference Include="UnityEngine.UI">
