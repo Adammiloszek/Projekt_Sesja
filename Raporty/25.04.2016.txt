@@ -1,0 +1,45 @@
+﻿25.04.2016
+Grupa 1:
+- zaimplementowanie ruchu Pacmana
+
+Grupa 2:
+Kamil Reszka:
+- dodanie pomysłu rozdzielenia etapu na dwie sceny - mapy kampusu i mapy wydziału po wejściu do budynku
+
+Reszta:
+- omówienie w grupie szczegółów implementacji mapy kampusu
+
+Grupa 3:
+Adrian Wojciechowski: 
+	- stworzenie sceny
+	- dodanie ławek i ścian
+	- dodanie tymczasowego modelu gracza
+	- dodanie tymczasowego skryptu poruszania
+	- dodanie wykrywania ścian
+	- stworzenie modelu stożka (do pola widzenia)
+	
+Bartek Koziel:
+	- dodanie modelu stożka na scenę w Unity
+	- dodanie przezroczystości dla stożka
+	- "podczepienie" stożka pod postać gracza
+	- skrypt mechaniki wykrywania obiektu w polu widzenia
+	- pasek postępu ściągania dodany do GUI
+	- skrypt do paska ściągania
+	
+Wspólnie:
+	- stworzenie brancha na githubie
+	- pierwszy commit z postępem prac
+	- pierwsze testy poruszania i blokowania gracza na ścianach
+
+Grupa 4:
+- sporządzenie opisu minigry Arkanoid
+- ustalenie kolejnych szczegółów minigry (podział na poziomy, czas w grze, rodzaje bloczków, liczba żyć)
+- wstępne ustalenia dotyczące klasy zawierającej statystyki postaci
+
+Testerzy:
+brak raportu
+
+Grafik:
+- ustalenie designu etapu z grupą 2
+- ustalenie rozmieszczenia budynków na mapie
+- rozpoczęcie prac nad grafikami dla grupy 2

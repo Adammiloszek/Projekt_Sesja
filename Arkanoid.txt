@@ -1,0 +1,12 @@
+﻿Klon Arkanoida
+
+Developerzy:
+	Mateusz, Karol, Paweł
+
+Ogólny zarys:
+	Gra polega na odbijaniu kulki za pomocą sterowanej przez gracza platformy wewnętrz prostokąta otwartego z dołu. Celem gry jest zbicie jak największej liczby bloczków za pomocą kulki oraz jednoczesne niedopuszczenie do opuszczenia przez kulkę prostokąta. Za zbite bloczki otrzymuje się punkty. Zależnie od rodzaju, bloczki mogą być zbite po jednym lub wielu kontaktach z kulką, jednak istnieją także bloczki niezniszczalne, które jedynie utrudniają rozgrywkę. Gracz dysponuje określoną liczbą żyć, tzn. jeżeli kulka opuści prostokąt to gracz traci życie. Po stracie wszystkich żyć następuje koniec gry. Po zbiciu wszystkich bloczków (oprócz tych niezniszczalnych) lub upłynięciu czasu następuje przejście do kolejnego poziomu (każdy poziom charakteryzuje się innym układem bloczków). Aby wygrać grę (zdać egzamin), należy zdobyć określoną liczbę punktów.
+
+Wpływ statystyk na rozgrywkę:
+	Wiedza - im większa, tym szersza platforma
+	Ściąganie - im większe, tym większa kulka
+	Znajomości - im większe, tym dostajemy więcej czasu na poziom
