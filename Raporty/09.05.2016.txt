@@ -1,0 +1,56 @@
+﻿09.05.2016
+Grupa 1:
+Bartek Seliga:
+- Rozpoczęcie prac nad grafikami
+
+Kamil Witkowski:
+- Poprawienie ściany
+- Uporządkowanie plików
+- Rozpoczęcie implementacji kropek
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+- Oczekiwanie na grafiki
+
+Jacek Dziubiński:
+-Oddanie raportu w terminie
+
+Grupa 3:
+Bartek Koziel:
+- Poprawienie poruszania się postaci
+- Napisanie początkowego skryptu poruszania się profesora
+- Poprawienie skryptu obslugujacego ściąganie
+	
+Adrian Wojciechowski:
+- Ulepszenie hitboxa pola widzenia
+- Naprawienie bugów z poruszaniem
+- Poprawienie paska ściągania
+- Oddanie raportu w terminie
+	
+Razem:
+	- Opracowanie rozwiazania dotyczącego poruszania profesora
+
+Grupa 4:
+- Zaplanowanie implementacji kolejnych elementów minigry
+- Rozpoczęcie tworzenia klasy ze statystykami postaci
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+(04.04.2016 - 09.11.2016)
+- Stworzenie scenariuszy:
+		- ogólnych testów
+		- testów interfejsu 
+		- testów schematów rozgrywki
+- Przydzielenie zadań
+- Poprawienie wyglądu i sposobu działania strony internetowej projektu
+- Oczekiwanie na wersje alpha/beta do testów
+
+Krzysztof Osial:
+- Oddanie raportu w terminie
+
+Grafik:
+- brak raportu
