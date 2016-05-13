@@ -1,4 +1,8 @@
 ﻿using UnityEngine;
+<<<<<<< HEAD
+=======
+using System.Collections;
+>>>>>>> origin/Classroom
 
 public class FovController : MonoBehaviour {
 
