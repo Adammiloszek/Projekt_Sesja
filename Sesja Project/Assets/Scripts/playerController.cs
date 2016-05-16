@@ -2,10 +2,7 @@
 using UnityEngine.UI;
 
 public class playerController : MonoBehaviour {
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Classroom
     public float cheatingSpeed = 0.02f;
     public Slider slider;
     private bool studentInRange;
