@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class ProfesorMovement : MonoBehaviour {
 
     public Transform Profesor;
+<<<<<<< HEAD
     public float speed=1;
     //public float rotationSpeed = 2.0f;
     public Transform[] Points;
@@ -19,6 +20,15 @@ public class ProfesorMovement : MonoBehaviour {
     float step;
     List<Transform> listPoints= new List<Transform>();
     int direction;
+=======
+    public int speed=5;
+    public Transform[] Points;
+    Transform point;
+    bool onPoint=false;
+    bool readyToMove = true;
+    float step;
+    List<Transform> listPoints= new List<Transform>();
+>>>>>>> origin/Classroom
 
 
 
@@ -28,6 +38,7 @@ public class ProfesorMovement : MonoBehaviour {
     {
         step = speed * Time.deltaTime;
         point = Points[0];
+<<<<<<< HEAD
         RotateToward();
 
     }
@@ -60,11 +71,26 @@ public class ProfesorMovement : MonoBehaviour {
                 waiting++;
                 Profesor.localRotation = Quaternion.Euler(new Vector3(2 * waiting, 90, 90));
             }
+=======
+
+    }
+    void Update ()
+    {
+        
+        
+        if (point.position == Profesor.position)
+        {
+            
+            NewPoint();
+            RotateToward();
+            readyToMove = true;
+>>>>>>> origin/Classroom
         }
         else
         {
             if (readyToMove)
             {
+<<<<<<< HEAD
                 waiting = 0;
                 Profesor.position = Vector3.MoveTowards(Profesor.position, point.position, step);
                 
@@ -86,10 +112,17 @@ public class ProfesorMovement : MonoBehaviour {
         RotateToward();
     }
 
+=======
+                Profesor.position = Vector3.MoveTowards(Profesor.position, point.position, step);
+            }
+        }
+	}
+>>>>>>> origin/Classroom
     void RotateToward()
     {
 
 
+<<<<<<< HEAD
         Debug.Log(Profesor.position +"  "+ point.position );
 
         if (Profesor.position.x > point.position.x ) { Profesor.localRotation = Quaternion.Euler(new Vector3(180, 90, 90)); direction = 2; }
@@ -101,12 +134,15 @@ public class ProfesorMovement : MonoBehaviour {
         //_lookRotation = Quaternion.LookRotation(_direction);
         //transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * 1000);
 
+=======
+>>>>>>> origin/Classroom
     }
 
     void NewPoint()
     {
         
         listPoints.Clear();
+<<<<<<< HEAD
 
         foreach (Transform item in Points)
         {
@@ -114,6 +150,22 @@ public class ProfesorMovement : MonoBehaviour {
             {
                 listPoints.Add(item);
             }
+=======
+        int index = 0;
+        for (int i = 0; i < Points.Length; i++)
+        {
+            if (point == Points[i]) index = i;
+        }
+        if (index == 0) listPoints.Add(Points[1]);
+        if (index == 1) listPoints.Add(Points[0]);
+        if (index == 2) listPoints.Add(Points[3]);
+        if (index == 3) listPoints.Add(Points[2]);
+        if (index == 4) listPoints.Add(Points[5]);
+        if (index == 5) listPoints.Add(Points[4]);
+        for (int i = 0; i < Points.Length; i++)
+        {
+            if (index % 2 == i % 2) listPoints.Add(Points[i]);
+>>>>>>> origin/Classroom
         }
         point = listPoints[Random.Range(0, listPoints.Count)];
         

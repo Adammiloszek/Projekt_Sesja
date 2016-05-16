@@ -64,7 +64,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FovController.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\ProfesorMovement.cs" />
+=======
+<<<<<<< HEAD
+    <Compile Include="Assets\Scripts\ProfesorMovement.cs" />
+=======
+>>>>>>> origin/Classroom
+>>>>>>> origin/Classroom
     <Compile Include="Assets\Scripts\playerController.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\inicjacja.cs" />
