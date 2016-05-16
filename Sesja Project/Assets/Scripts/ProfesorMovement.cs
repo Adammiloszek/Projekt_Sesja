@@ -47,7 +47,7 @@ public class ProfesorMovement : MonoBehaviour {
             RotateToward();
 
 
-            StartCoroutine(WaitCoroutine());
+            //StartCoroutine(WaitCoroutine());
         }
         
         if (onPoint)
@@ -72,6 +72,15 @@ public class ProfesorMovement : MonoBehaviour {
                 waiting2++;
                 Profesor.localRotation = Quaternion.Euler(new Vector3(2 * waiting2, 90, 90));
             }
+            else
+            {
+                if (rotate)
+                {
+                    readyToMove = true;
+                    onPoint = false;
+                    RotateToward();
+                }
+            }
         }
         else
         {
@@ -92,13 +101,13 @@ public class ProfesorMovement : MonoBehaviour {
         
     }
 
-    IEnumerator WaitCoroutine()
+    /*IEnumerator WaitCoroutine()
     {
         yield return new WaitForSeconds(5f);
         readyToMove = true;
         onPoint = false;
         RotateToward();
-    }
+    }*/
 
     void RotateToward()
     {
