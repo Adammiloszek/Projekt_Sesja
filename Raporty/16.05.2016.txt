@@ -1,0 +1,44 @@
+﻿16.05.2016
+Grupa 1:
+Ola Ciok:
+- Rozpoczęcie prac nad punktacją (kropkami do "zjedzenia")
+- Oddanie raportu w terminie
+
+Grupa 2:
+- Oczekiwanie na grafiki
+
+Jacek Dziubiński:
+- Oddanie raportu w terminie
+
+Grupa 3:
+Bartek Koziel:
+- Dodanie waypointów na mapie (dla poruszania profesora)
+- Poprawienie skryptu poruszania się profesora
+- Poprawienie implementacji pola wiedzenia
+
+Adrian Wojciechowski:
+- Dodanie rotacji profesora w kierunku jego ruchu
+- Zmiana wyglądu sali, by pole widzenia było lepiej widoczne
+- Poprawienie hierarchi plików i dodanie obiektów do przyszłego użycia
+- Oddanie raportu w terminie
+
+Wspólnie:
+- Dodanie rotacji o odpowiedni kąt przy zatrzymaniu na punkcie
+- Dodanie obrotu profesora o 360 st. przy zatrzymaniu.
+
+Grupa 4:
+- Kontynuacja implementacji kolejnych elementów
+- Testowanie dotychczas stworzonej części minigry
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+- Konsultacja z grupą architektów na temat działania wszystkich schematów w grze
+- Wnoszenie poprawek do scenariusza testów
+
+Krzysztof Osial:
+- Oddanie raportu w terminie
+
+Grafik:
+- praca nad zleconymi teksturami
