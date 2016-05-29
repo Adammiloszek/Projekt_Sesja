@@ -45,9 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BonusDoPokoju.cs" />
-     <Compile Include="Assets\inicjacja.cs" />
-     <Compile Include="Assets\input.cs" />
+     <Compile Include="Assets\scripts\BonusDoPokoju.cs" />
+     <Compile Include="Assets\scripts\inicjacja.cs" />
+     <Compile Include="Assets\scripts\input.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programy/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
