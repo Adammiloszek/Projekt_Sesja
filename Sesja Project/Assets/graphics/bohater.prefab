@@ -155,7 +155,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.24040532
+  m_Radius: 0.2
 --- !u!81 &8101150
 AudioListener:
   m_ObjectHideFlags: 1
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   postac: {fileID: 139372}
+  speed: 0.1
 --- !u!124 &12465442
 Behaviour:
   m_ObjectHideFlags: 1
