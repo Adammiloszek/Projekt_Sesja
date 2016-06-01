@@ -7,11 +7,22 @@ public class input : MonoBehaviour {
     public float speed = 0.1f;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 
-	}
-    // Update is called once per frame
-    
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.name == "bonus")
+        {
+            Destroy(coll.gameObject);
+            //tutaj dodaj so jeszcze ma się dziać kiedy wejdziemy w bonus
+            //na razie jedynie zostaje zniszczony :O
+        }
+    }
+
+
     void FixedUpdate () {
         if (Input.GetKey("up"))
             postac.GetComponent<Transform>().transform.position += new Vector3(0, speed, 0);
