@@ -5,7 +5,7 @@ public class Stats_Changing : MonoBehaviour {
 
     public void KnowledgeUp()
     {
-        if (Stats.Remaining > 0 && Stats.Knowledge < 10)
+        if (Stats.Remaining > 0 && Stats.Knowledge < Stats.Max)
         {
             Stats.Remaining -= 1;
             Stats.Knowledge += 1;
@@ -24,7 +24,7 @@ public class Stats_Changing : MonoBehaviour {
 
     public void ConnectionsUp()
     {
-        if (Stats.Remaining > 0 && Stats.Connections < 10)
+        if (Stats.Remaining > 0 && Stats.Connections < Stats.Max)
         {
             Stats.Remaining -= 1;
             Stats.Connections += 1;
@@ -42,7 +42,7 @@ public class Stats_Changing : MonoBehaviour {
 
     public void CheatingUp()
     {
-        if (Stats.Remaining > 0 && Stats.Cheating < 10)
+        if (Stats.Remaining > 0 && Stats.Cheating < Stats.Max)
         {
             Stats.Remaining -= 1;
             Stats.Cheating += 1;

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Statystyki/scena 1.unity
+- path: Assets/Statystyki/Scenes/scena 1.unity
   isLoaded: 1
   isActive: 1

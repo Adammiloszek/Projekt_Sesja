@@ -45,9 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Arkanoid\Ball.cs" />
-     <Compile Include="Assets\Arkanoid\Racket.cs" />
-     <Compile Include="Assets\Block.cs" />
+     <Compile Include="Assets\Arkanoid\Scripts\Ball.cs" />
+     <Compile Include="Assets\Arkanoid\Scripts\Block.cs" />
+     <Compile Include="Assets\Arkanoid\Scripts\Racket.cs" />
      <Compile Include="Assets\Statystyki\Scripts\Display.cs" />
      <Compile Include="Assets\Statystyki\Scripts\DisplayCheating.cs" />
      <Compile Include="Assets\Statystyki\Scripts\DisplayConnections.cs" />

@@ -9,16 +9,14 @@ public static class Stats {
     private static int knowledge = 0;
 
     private const int points = 15;
+    private const int max = 10;
 
     private static int remaining = points;
-
 
     private static int start_cheating = cheating;
     private static int start_connections = connections;
     private static int start_knowledge = knowledge;
     
-
-
     public static int Cheating
     {
         get { return cheating; }
@@ -46,6 +44,11 @@ public static class Stats {
     public static int Points
     {
         get { return points; }
+    }
+
+    public static int Max
+    {
+        get { return max; }
     }
 
     public static int StartCheating
