@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 163752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 412162}
   m_RootOrder: 0
@@ -111,7 +111,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.4100819
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
