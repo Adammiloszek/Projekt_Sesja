@@ -110,11 +110,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407636, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.9543014
+      value: -8.05
       objectReference: {fileID: 0}
     - target: {fileID: 407636, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.6137322
+      value: 6.27
       objectReference: {fileID: 0}
     - target: {fileID: 407636, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
       propertyPath: m_LocalPosition.z
@@ -198,59 +198,4 @@ Prefab:
       objectReference: {fileID: 481826, guid: cee259274c29daa4a9d6bf73f1c0e3d6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
-  m_RootGameObject: {fileID: 1102945786}
   m_IsPrefabParent: 0
---- !u!1 &1102945786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 110376, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
-  m_PrefabInternal: {fileID: 384122868}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1102945788}
-  - 114: {fileID: 1102945787}
-  m_Layer: 0
-  m_Name: Poczatek
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1102945787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11497384, guid: c49245dcdc2fde84a932d1b1d0d64d76,
-    type: 2}
-  m_PrefabInternal: {fileID: 384122868}
-  m_GameObject: {fileID: 1102945786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d4a144916446941bbd040d69231d30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  postac: {fileID: 412162, guid: a5a4d29a02f820f41bb15e5a2ababc3c, type: 2}
-  kat: {fileID: 465142, guid: b429f46b9792c0c4daae834e389d52fa, type: 2}
-  brzeg: {fileID: 468024, guid: b7c29a5a6a6922e4f965d49bbddfb368, type: 2}
-  korytarz: {fileID: 468114, guid: ab0b7c0d3b6a7994c852ad04978aa0ba, type: 2}
-  "pok\xF3jWej\u015BcieWPrawo":
-  - {fileID: 440518, guid: 91669027c90947b4386689d2da992b6a, type: 2}
-  - {fileID: 494916, guid: 054ca6a09714566419596dbccae77468, type: 2}
-  - {fileID: 470404, guid: 0d34e338349ad4341823d5cc6c39f25d, type: 2}
-  "pokojWej\u015BcieWLewo":
-  - {fileID: 409044, guid: 69a3416b9a84a71499e44ebda64f9778, type: 2}
-  - {fileID: 457940, guid: 6c2e6ac56c6a23a49ae8307c09526542, type: 2}
-  - {fileID: 481826, guid: cee259274c29daa4a9d6bf73f1c0e3d6, type: 2}
-  wyskokosc: 15
-  szerokosc: 9
---- !u!4 &1102945788
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 407636, guid: c49245dcdc2fde84a932d1b1d0d64d76, type: 2}
-  m_PrefabInternal: {fileID: 384122868}
-  m_GameObject: {fileID: 1102945786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9543014, y: 0.6137322, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
