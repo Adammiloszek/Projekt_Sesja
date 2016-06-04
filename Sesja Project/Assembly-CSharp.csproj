@@ -48,6 +48,12 @@
      <Compile Include="Assets\Arkanoid\Ball.cs" />
      <Compile Include="Assets\Arkanoid\Racket.cs" />
      <Compile Include="Assets\Block.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\Display.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\DisplayCheating.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\DisplayConnections.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\DisplayRemaining.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\Stats.cs" />
+     <Compile Include="Assets\Statystyki\Scripts\Stats_Changing.cs" />
      <Compile Include="Assets\inicjacja.cs" />
      <Compile Include="Assets\input.cs" />
  <Reference Include="UnityEngine.UI">

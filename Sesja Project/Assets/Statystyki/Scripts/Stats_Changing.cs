@@ -1,0 +1,60 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Stats_Changing : MonoBehaviour {
+
+    public void KnowledgeUp()
+    {
+        if (Stats.Remaining > 0 && Stats.Knowledge < 10)
+        {
+            Stats.Remaining -= 1;
+            Stats.Knowledge += 1;
+        }
+        
+    }
+
+    public void KnowledgeDown()
+    {
+        if (Stats.Remaining < Stats.Points && Stats.Knowledge > 0)
+        {
+            Stats.Remaining += 1;
+            Stats.Knowledge -= 1;
+        }
+    }
+
+    public void ConnectionsUp()
+    {
+        if (Stats.Remaining > 0 && Stats.Connections < 10)
+        {
+            Stats.Remaining -= 1;
+            Stats.Connections += 1;
+        }
+    }
+
+    public void ConnectionsDown()
+    {
+        if (Stats.Remaining < Stats.Points && Stats.Connections > 0)
+        {
+            Stats.Remaining += 1;
+            Stats.Connections -= 1;
+        }
+    }
+
+    public void CheatingUp()
+    {
+        if (Stats.Remaining > 0 && Stats.Cheating < 10)
+        {
+            Stats.Remaining -= 1;
+            Stats.Cheating += 1;
+        }
+    }
+
+    public void CheatingDown()
+    {
+        if (Stats.Remaining < Stats.Points && Stats.Cheating > 0)
+        {
+            Stats.Remaining += 1;
+            Stats.Cheating -= 1;
+        }
+    }
+}
