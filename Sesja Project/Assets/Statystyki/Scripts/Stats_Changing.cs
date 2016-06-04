@@ -15,7 +15,7 @@ public class Stats_Changing : MonoBehaviour {
 
     public void KnowledgeDown()
     {
-        if (Stats.Remaining < Stats.Points && Stats.Knowledge > 0)
+        if (Stats.Remaining < Stats.Points && Stats.Knowledge > Stats.StartKnowledge)
         {
             Stats.Remaining += 1;
             Stats.Knowledge -= 1;
@@ -33,7 +33,7 @@ public class Stats_Changing : MonoBehaviour {
 
     public void ConnectionsDown()
     {
-        if (Stats.Remaining < Stats.Points && Stats.Connections > 0)
+        if (Stats.Remaining < Stats.Points && Stats.Connections > Stats.StartConnections)
         {
             Stats.Remaining += 1;
             Stats.Connections -= 1;
@@ -51,10 +51,20 @@ public class Stats_Changing : MonoBehaviour {
 
     public void CheatingDown()
     {
-        if (Stats.Remaining < Stats.Points && Stats.Cheating > 0)
+        if (Stats.Remaining < Stats.Points && Stats.Cheating > Stats.StartCheating)
         {
             Stats.Remaining += 1;
             Stats.Cheating -= 1;
+        }
+    }
+
+    public void Submit()
+    {
+        if (Stats.Remaining == 0)
+        {
+            Stats.StartCheating = Stats.Cheating;
+            Stats.StartConnections = Stats.Connections;
+            Stats.StartKnowledge = Stats.Knowledge;
         }
     }
 }
