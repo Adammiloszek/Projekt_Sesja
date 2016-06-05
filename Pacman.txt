@@ -1,12 +1,12 @@
-Klon Pacmana
+﻿Klon Pacmana
 
 Developerzy:
 Bartek, Kamil, Ola
 
-Zarys rozgrywki:
-Gra składa się z kliku etapów - symbolizują one zadania na egzaminie. By zdać trzeba przejść wszystkie. Gramy naszym studentem - Pacmanem. Level to labirynt (sala egzaminacyjna), po którym porozsiewane są kropki, które są punktami potrzebnymi do zaliczenia zadania. Przeciwnicy - duszki - to wykładowcy (im trudniejszy przedmiot, tym więcej przeciwników do pilnowania), chodzą po całym labiryncie. Na poziomie występują "duże" kropki - ściągi przydatne do rozwiązania teorii zadania, po zebraniu których student może "zjeść" wykładowcę, aby nie przeszkadzał przez jakiś czas.
+Ogólny zarys:
+Gra składa się z ~3 etapów - symbolizują one zadania na egzaminie. By zdać trzeba zebrać ponad połowę punktów ze wszystkich zadań. Gramy naszym studentem - Pacmanem. Level to labirynt (sala egzaminacyjna), po którym porozsiewane są kropki, które są punktami potrzebnymi do zaliczenia zadania. Przeciwnicy - duszki - to wykładowcy (im trudniejszy przedmiot, tym więcej przeciwników do pilnowania), chodzą po całym labiryncie. Na poziomie występują "duże kropki" w postaci ściągi, przydatne do rozwiązania zadania, po zebraniu której student zaczyna ściągać - tak długo jak student nie zostanie zauważony przez wykładowców, może swobodnie zbierać punkty. Podczas ściągania wykładowcy stają się przezroczyści i nie wchodzą w interakcję ze studentem. Na mapie pojawiać się też będą okresowo koledzy - będa stać w miejscu, jeżeli się do owego podejdzie, albo nam on pomoże (z planszy zniknie ok. 10 najbliższych siebie kropek, które zamienią się w punkty), albo przeszkodzi (ok. 10 kropek wróci na planszę) w egzaminie.
 
 Wpływ statystyk na rozgrywkę:
-Wiedza - im większa wiedza, tym mniej pilnujących wykładowców - mniej duszków.
-Ściąganie - więcej dużych kropek pozwalających na "zjedzenie" wykładowców.
-Znajomości - im większe znajomości tym większa szansa, że ktoś podrzuci nam rozwiązanie zadania, czyli nie będziemy musieli przechodzić danego etapu.
+Wiedza - im większa wiedza, tym mniej pilnujących wykładowców - mniej duszków. Częściej pojawiają się przeszkadzający koledzy.
+Ściąganie - im większe umiejętności w tej dziedzinie, tym dłuższy czas niezauważenia przez wykładowce.
+Znajomości - im większe znajomości tym częściej pojawiają się pomagający koledzy.

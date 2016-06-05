@@ -1,0 +1,34 @@
+﻿23.05.2016
+Grupa 1:
+- Brak postępów
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+Łukasz Tyczyński:
+- Poprawienie kolizji z obiektami na wydziale
+
+Jacek Dziubiński:
+- Oddanie raportu w terminie
+
+Grupa 3:
+- Wstępne ukończenie prac nad przydzieloną częścią
+
+Adrian Wojciechowski:
+- Oddanie raportu w terminie
+
+Grupa 4:
+- Stworzenie klasy ze statystykami postaci
+- Końcowe ustalenia odnośnie mechaniki minigry
+- Dyskusja na temat interfejsu użytkownika (wyświetlanie liczby punktów, żyć, informacja na temat wygranej/przegranej)
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+- Testowanie pojedynczych mechanizmów rozgrywki oraz edycja scenariusza testów
+- Konsultacja w sprawie prezentowania się modeli graficznych w interfejsie gry
+
+Grafik:
+- Brak raportu

@@ -1,0 +1,61 @@
+﻿18.04.2016
+Grupa 1:
+- Zapoznanie się z tutorialem gry Pacman
+- Podzielenie pracy na etapy
+
+Bartek Seliga:
+- Rozpoczęcie prac nad pierwszym, wyznaczonym etapem
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+Jacek Dziubiński:
+- Ściągnięcie Unity
+- Stworzenie progresywnej listy "todo"
+- Napisanie opisu części projektu należącej do grupy
+- Oddanie raportu w terminie
+
+Arek Murawski:
+- Rozwinięcie generowania mapy wydziału
+- Opracowanie "bonusy"
+
+Kamil Reszka:
+- Ściągnięcie Unity
+- Opracowanie mapę
+
+Piotr Cieniak:
+- Ściągnięcie Unity
+- Przeanalizowano Unity oraz Unreal Engine
+(Oczekiwanie na taski)
+
+Łukasz Tyczyński:
+- Ściągnięcie Unity
+- Opracowanie tutoriale
+(Oczekiwanie na taski)
+
+Grupa 3:
+Bartek Koziel:
+- Zaprojektowanie i implementacja obszaru gry
+- Stworzenie obiektów występujących w grze
+
+Adrian Wojciechowski:
+- Stworzenie postaci gracza
+- Implementacja poruszania się
+- Oddanie raportu w terminie
+
+Grupa 4:
+- Wstępne ustalenie rozmieszczenia wszystkich potrzebnych obiektów w grze
+- Kontynuowanie implementacji (dodanie do sceny nowych elementów z użyciem przykładowych grafik)
+- Dodanie tła
+(Oczekiwanie na pozostałe grafiki)
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+brak raportu
+
+Grafik:
+- Stworzenie szkiców interfejsów aplikacji
+- Oddanie raportu w terminie

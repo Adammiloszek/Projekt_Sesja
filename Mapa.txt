@@ -1,0 +1,11 @@
+﻿Mapa wydziału
+
+Developerzy:
+Jacek Dziubiński, Kamil Reszka, Piotrek Borzlut Cieniak, Łukasz Tyczyński, Arek Murawski
+
+Ogólny zarys:
+Rzut z góry na mapę, postać gracza na środku ekranu. Gra umożliwia chodzenie postacią po wydziale. Rozmieszczenie sal w wydziale będzie losowane przy rozpoczęciu gry.
+W salach będą odbywały się egzaminy zaliczeniowe. Głównym zadaniem gracza będzie dotarcie do właściwej sali z egzaminem na czas. Podejście do egzaminu będzie oznaczało rozegranie jednej z przewidzianych mini-gier. Oprócz sal egzaminacyjnych będą też sale, w których gracz będzie mógł znaleźć przedmioty wpływające na przebieg dalszej gry. Bonusy te będą się pojawiały losowo w salach po skończeniu jednego egzaminu.
+
+Wpływ statystyk na rozgrywkę:
+Nie planowany.

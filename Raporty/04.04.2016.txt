@@ -1,0 +1,53 @@
+﻿04.04.2016
+Grupa1:
+Aleksandra Ciok:
+- Opracowywanie mechaniki "minigry 3" - Klon Pacmana
+- Spisanie opisu "minigry 3"
+- Oddanie raportu w terminie
+(Dodatkowo: uczestnictwo we wprowadzeniu do Unity)
+
+Bartek Seliga
+- Opracowywanie mechaniki "minigry 3" - Klon Pacmana
+- Opracowanie struktury "minigry 3"
+(Dodatkowo: uczestnictwo we wprowadzeniu do Unity)
+
+Kamil Witkowski
+- Opracowywanie mechaniki "minigry 3" - Klon Pacmana
+- Opracowanie struktury "minigry 3"
+	DODATKOWO: poprowadzenie wprowadzenia do Unity (wykład dla reszty grupy, mający na celu pokazanie składni i cech szczególnych silnika oraz środowiska programistycznego)
+
+Mateusz Jaworski, Karol Kostrzewa, Paweł Meuszyński:
+- Rozdzielenie zadań
+- Ustalenie koncepcji minigry - Klon Arkanoida
+- Zapoznanie się z silnikiem Unity
+
+Grupa 2:
+Arek Murawski:
+- Zaimplementowanie generowania mapy ze zdefiniowanych wcześniej patternów
+
+Jacek Dziubiński:
+- Oddanie raportu w terminie
+(Dodatkowo: uczestnictwo we wprowadzeniu do Unity)
+
+Kamil Reszka:
+(Dodatkowo: uczestnictwo we wprowadzeniu do Unity)
+
+Piotr Cieniak:
+(Dodatkowo: uczestnictwo we wprowadzeniu do Unity)
+
+Grupa 3:
+Wspólnie:
+- Ustalenie wstępnych założeń projektu,
+- Dopracowanie szczegółów logiki gry, 
+- Określenie działanie pola widzenia "profesora" w grze,
+- Zaplanowanie poziomu, mapy, sterowania i sposobu interakcji gracza ze środowiskiem gry
+
+Adrian Wojciechowski:
+- Oddanie raportu w terminie
+
+Testerzy:
+- Kontynuowano pracę nad stroną projektu
+
+Grafik:
+- Stworzenie szkicu logotypu projektu
+- Ustalanie zapotrzebowania na prace graficzne dla poszczególnych grup

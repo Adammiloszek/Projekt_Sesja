@@ -9,10 +9,10 @@ Koncept przebiegu rozgrywki:
 (dokładne opisy poszczególnych etapów w oddzielnych plikach - dodawane i uzupełniane na bieżąco)
 1. Menu - Start gry, wczytanie, wyjście.
 2. Rozdzielanie punktów na statystyki (wstępnie 3 statystyki np. wiedza, ściąganie, znajomości).
-3. Etap przejściowy między minigierkami - hub a'la Pokemony, gdzie trzeba dotrzeć do sali, w której odbywa się egzamin. W tej części można znaleźć jakieś power-upy do egzaminu, czyli zwiększenie statystyk. Ograniczenia czasu (?). Numery sal generowane losowo (żeby etap był nieco bardziej skomplikowany)/ Mapa generowana proceduralnie (randomowa mapa) (?).
+3. Etap przejściowy między minigierkami - "Mapa wydziału" (opis: Mapa.txt)
 4. Minigry, jako egzamin:
-	4.1. Klon Arkanoida - statystyki wpływają na wielkość kijka odbijającego kulkę, szybkość ruchu kulki, ilość bloczków (?)
-	4.2. Ściąganie - gra, na której pomyśle się wzorujemy: http://www.stickpage.com/classroom2play.shtml Statystyki wpływają na szybkość chodzenia, szybkość ściągania, pole widzenia nauczyciela/ilość nauczycieli (?)
+	4.1. Klon Arkanoida - (opis: Arkanoid.txt)
+	4.2. Ściąganie - (opis: Sciaganie.txt)
 	4.3. Klon Pacmana (opis: Pacman.txt)
 	4.4. Pokemony (?) - walka z egzaminatorem a'la Pokemon. Ataki typu ściągnij, użyj wiedzy, zerknij od kolegi, telefon do przyjaciela itp. (coś jak milionerzy pewnie, tylko w konwencji takiej jak w Pokemonach) (?)
 	4.5. Labirynt - (?)
