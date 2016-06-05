@@ -91,7 +91,7 @@ public class PacmanMove : MonoBehaviour
 
                     ghosts[i].GetComponent("GhostMovePathInCode");
                     StartCoroutine(Wait());
-                    Debug.Log("po wait"); // instantly writes that
+                    Debug.Log("po wait");
 
                 }
 
