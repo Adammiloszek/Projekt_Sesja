@@ -29,7 +29,7 @@ public class superDot : MonoBehaviour {
 	{
 		
 		Debug.Log ("waiting"); // runs
-		yield return new WaitForSeconds (0.1f);
+		yield return new WaitForSeconds (5.1f);
 
 		Debug.Log ("doing shit");	// won't run.
 		/* scriptOne.speed = 0;
@@ -40,7 +40,8 @@ public class superDot : MonoBehaviour {
 		ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
 
 		if (co.name == "pacman") {
-			Destroy (gameObject);
+			
+			// Destroy (gameObject);
 
 			for (int i = 0; i < ghosts.Length; i++) {
 				// ghosts [i].SetActive (false);
