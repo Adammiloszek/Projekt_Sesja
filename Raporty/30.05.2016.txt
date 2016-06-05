@@ -1,0 +1,39 @@
+﻿30.05.2016
+Grupa 1:
+- Skończono "kropki"
+- Przygotowano bazę pod ruch duszków
+- Wykonano chodzącego duszka (po stałej trasie)
+- Rozpoczęcie prac nad losowym poruszaniem się duszka
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+Łukasz Tyczyński:
+- Poprawiono kolizję na nowej wersji 
+
+Jacek Dziubiński:
+- Zaktualizowanie części projektu na githubie
+- Zrobienie "porządku" na githubie
+- Oddanie raportu w terminie
+
+Grupa 3:
+- Oczekiwanie na dalsze instrukcje (PM: przekazanie nowych zadań)
+
+Grupa 4:
+- Kontynuowanie prac implementacyjnych
+- Poprawki błędów
+- Dodanie kolejnych poziomów
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+- Wstępne sprawdzanie wszystkich minigierek
+- Pomoc przy obróbce modeli 2D tekstur zaimplementowanych w grze
+
+Krzysztof Osial:
+- Oddanie raportu w terminie
+
+Grafik:
+- Oddanie ukończonych grafik
