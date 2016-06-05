@@ -100,9 +100,9 @@ public class GhostMovePathInCode : MonoBehaviour {
 		}
 		else index = (index + 1) % waypoints.Length;
 		// Animation
-	/*	Vector2 dir = waypoints[index].position - transform.position;
+		Vector2 dir = waypoints[index].position - transform.position;
 		animator.SetFloat("DirX", dir.x);
-		animator.SetFloat("DirY", dir.y);	*/ // po zrobieniu animacji
+		animator.SetFloat("DirY", dir.y);	 // po zrobieniu animacji
 	}
 	void OnTriggerEnter2D(Collider2D co)
 	{
