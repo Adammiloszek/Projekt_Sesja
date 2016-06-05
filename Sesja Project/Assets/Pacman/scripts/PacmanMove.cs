@@ -77,9 +77,7 @@ public class PacmanMove : MonoBehaviour
 	{
 
 
-		if (co.name == "superDot" || co.name == "superDot2"
-         || co.name == "superDot3" || co.name == "superDot4"
-         || co.name == "superDot5" || co.name == "superDot6")
+		if (co.tag == "superDot")
         {
             if (waiting == false)
             {
