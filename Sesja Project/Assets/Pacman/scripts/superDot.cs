@@ -18,43 +18,44 @@ public class superDot : MonoBehaviour {
 
 	 
 	
-	// Update is called once per frame
-	void Update () {
-		GameObject[] ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
-		scriptOne = ghosts [0].GetComponent<GhostMovePathInCode> ();
+	//// Update is called once per frame
+	//void Update () {
+	//	GameObject[] ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
+	//	scriptOne = ghosts [0].GetComponent<GhostMovePathInCode> ();
 
-	}
+	//}
 
-	IEnumerator Wait()
-	{
+	//IEnumerator Wait()
+	//{
 		
-		Debug.Log ("waiting"); // runs
-		yield return new WaitForSeconds (5.1f);
+	//	Debug.Log ("waiting"); // runs
+	//	yield return new WaitForSeconds (5.1f);
 
-		Debug.Log ("doing shit");	// won't run.
-		/* scriptOne.speed = 0;
-		ghosts [0].SetActive (false); // nie wywoluje sie.  */
-	}
+	//	Debug.Log ("doing shit");	// won't run.
+	//	/* scriptOne.speed = 0;
+	//	ghosts [0].SetActive (false); // nie wywoluje sie.  */
+	//}
 
-	void OnTriggerEnter2D(Collider2D co) {
-		ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
+	//void OnTriggerEnter2D(Collider2D co) {
+	//	ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
 
-		if (co.name == "pacman") {
-			
-			// Destroy (gameObject);
+	//	if (co.name == "pacman") {
 
-			for (int i = 0; i < ghosts.Length; i++) {
-				// ghosts [i].SetActive (false);
+ //           // Destroy (gameObject);
 
-				ghosts[i].GetComponent("GhostMovePathInCode");
-				StartCoroutine(Wait());
-				Debug.Log("po wait"); // instantly writes that
+ //           for (int i = 0; i < ghosts.Length; i++)
+ //           {
+ //               // ghosts [i].SetActive (false);
 
-			}
+ //               ghosts[i].GetComponent("GhostMovePathInCode");
+ //               StartCoroutine(Wait());
+ //               Debug.Log("po wait"); // instantly writes that
 
-		}
+ //           }
 
-	}
+ //       }
+
+	//}
 
 
 }

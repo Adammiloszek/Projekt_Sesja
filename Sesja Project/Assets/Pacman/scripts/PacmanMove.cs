@@ -5,6 +5,7 @@ public class PacmanMove : MonoBehaviour
 {
 	public int cheating;
 	GameObject[] ghosts;
+    bool waiting;
 
 	public GhostMovePathInCode scriptOne;
 	/* public GhostMovePathInCode scriptTwo;
@@ -40,9 +41,12 @@ public class PacmanMove : MonoBehaviour
 		Debug.Log ("doing shit");
 
 
-		for (int i = 0; i < ghosts.Length; i++) {
+		for (int i = 0; i < ghosts.Length; i++)
+        {
 			ghosts [i].SetActive (true);
 		}
+
+        waiting = false;
 	}
 
 
@@ -73,22 +77,29 @@ public class PacmanMove : MonoBehaviour
 	{
 
 
-		if (co.name == "superDot") {
-			ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
+		if (co.name == "superDot" || co.name == "superDot2"
+         || co.name == "superDot3" || co.name == "superDot4"
+         || co.name == "superDot5" || co.name == "superDot6")
+        {
+            if (waiting == false)
+            {
+                ghosts = GameObject.FindGameObjectsWithTag("Ghost");
 
-			for (int i = 0; i < ghosts.Length; i++) {
+                for (int i = 0; i < ghosts.Length; i++)
+                {
+                    ghosts[i].SetActive(false);
 
-				ghosts [i].SetActive (false);
+                    ghosts[i].GetComponent("GhostMovePathInCode");
+                    StartCoroutine(Wait());
+                    Debug.Log("po wait"); // instantly writes that
 
-				//ghosts [0].SetActive (false);
+                }
 
-				ghosts [i].GetComponent ("GhostMovePathInCode");
-				StartCoroutine (Wait ());
-				Debug.Log ("po wait"); // instantly writes that
+                waiting = true;
+            }
 
-				Destroy (co.gameObject);
-			}
-		}
+            Destroy(co.gameObject);
+        }
 
 
 	}
