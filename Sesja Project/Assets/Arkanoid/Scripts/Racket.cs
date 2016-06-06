@@ -16,7 +16,7 @@ public class Racket : MonoBehaviour {
 	void Update () {
         float h = Input.GetAxisRaw("Horizontal");
         
-
+        //jeśli piłka się nie przemieszcza - porażka - zatrzymaj deske
         if(ballObj.GetComponent<Rigidbody2D>().velocity.x == 0)
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.right * h * 0;

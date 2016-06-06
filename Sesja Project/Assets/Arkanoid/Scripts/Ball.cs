@@ -17,10 +17,15 @@ public class Ball : MonoBehaviour {
     void Update()
     {
 
+        //jeśli piłka jest poniżej podstawki to ją zatrzymaj
         if (GetComponent<Rigidbody2D>().position.y < -105)
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * 0;
             GetComponent<Rigidbody2D>().velocity = Vector2.right * 0;
+
+           /*
+            * TODO: przegrana / odjecie zycia
+            */
            
         }
     }
