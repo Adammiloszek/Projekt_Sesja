@@ -15,11 +15,12 @@ public class GhostMovePathInCode : MonoBehaviour {
 
 		if (this.gameObject.name == "inky(Clone)") {
 
-			waypoints = new Transform[3];
+			waypoints = new Transform[4];
 			Debug.Log("blinky ");
 			waypoints [0] = GameObject.Find ("Waypoint50").transform;
 			waypoints [1] = GameObject.Find ("Waypoint52").transform;
 			waypoints [2] = GameObject.Find ("Waypoint42").transform;
+			waypoints [3] = GameObject.Find ("Waypoint16").transform;
 		}
 
 
@@ -69,6 +70,7 @@ public class GhostMovePathInCode : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+
 		
 		
 		

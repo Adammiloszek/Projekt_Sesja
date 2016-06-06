@@ -38,8 +38,14 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 
 	public	void LaunchWaitForBadGuy() {
-		Debug.Log("in Launch waiting");
+		Debug.Log("in Launch waiting for BadGuy");
 		StartCoroutine( WaitForBadGuy());
+	}
+
+
+	public	void LaunchWaitForGoodGuy() {
+		Debug.Log("in Launch waiting for goodGuy");
+		StartCoroutine( WaitForGoodGuy());
 	}
 
 
@@ -65,9 +71,9 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		// Use this for initialization
 		void Start () {
-		Debug.Log ("start creating in 3s");
+		Debug.Log ("start creating in 3s or 5s");
 		InvokeRepeating("LaunchWaitForBadGuy", 3, 15F);
-
+		InvokeRepeating("LaunchWaitForGoodGuy", 5, 7F);
 
 			
 
