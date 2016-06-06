@@ -14,6 +14,7 @@ public class GhostMovePathInCode : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 
 		if (this.gameObject.name == "inky(Clone)") {
+
 			waypoints = new Transform[3];
 			Debug.Log("blinky ");
 			waypoints [0] = GameObject.Find ("Waypoint50").transform;

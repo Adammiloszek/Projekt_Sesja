@@ -19,14 +19,14 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		Debug.Log ("bum good guy appears");
 
-		// lewy dolny róg : (-5.5f, -3.8f)
-		// prawy dolny róg: (19.4f, -3.8f)
-		// lewy górny róg: (-5.5f, 24f)
-		// prawy górny róg: (19.4f, 24f)
+		// lewy dolny róg : (1.93f, 2.27f)
+		// prawy dolny róg: (27f, 2f)
+		// lewy górny róg: (1.89f, 30f)
+		// prawy górny róg: (27f, 30f)
 
 		Random random = new Random ();
 
-		Vector2 randomVector = new Vector2 (Random.Range (-5.5f+7.54f, 19.4f+5.8f), Random.Range (-3.8f+7.54f, 24.0f+5.8f));
+		Vector2 randomVector = new Vector2 (Random.Range (1.93f, 27f), Random.Range (2.27f, 30f));
 
 
 
@@ -52,7 +52,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		yield return new WaitForSeconds (5 + connection - knowledge);
 
 		Debug.Log ("bum bad guy appears");
-		Vector2 randomVector = new Vector2 (Random.Range (-5.5f+7.54f, 19.4f+5.8f), Random.Range (-3.8f+7.54f, 24.0f+5.8f));
+		Vector2 randomVector = new Vector2 (Random.Range (1.93f, 27f), Random.Range (2.27f, 30f));
 
 
 
