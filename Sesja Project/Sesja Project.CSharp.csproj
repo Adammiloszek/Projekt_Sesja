@@ -65,8 +65,12 @@
   <ItemGroup>
     <Compile Include="Assets\Arkanoid\Scripts\Ball.cs" />
     <Compile Include="Assets\Arkanoid\Scripts\Block.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\DisplayLife.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\DisplayPoints.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\Main.cs" />
     <Compile Include="Assets\Arkanoid\Scripts\Racket.cs" />
     <Compile Include="Assets\Arkanoid\Scripts\StrongBlock.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\Timer.cs" />
     <Compile Include="Assets\Pacman\scripts\GhostMove.cs" />
     <Compile Include="Assets\Pacman\scripts\GhostMovePathInCode.cs" />
     <Compile Include="Assets\Pacman\scripts\PacmanMove.cs" />

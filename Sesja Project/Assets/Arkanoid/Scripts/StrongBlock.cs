@@ -8,6 +8,7 @@ public class StrongBlock : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         life = 2;
+        Main.Bloki++;
 	}
 	
 	// Update is called once per frame
@@ -19,9 +20,13 @@ public class StrongBlock : MonoBehaviour {
     {
         // jeśli uderzono 2 razy usun blok
         life--;
+       
 
         if (life <= 0)
         {
+            Main.Punkty += 20;
+            Main.Bloki--;
+
             Destroy(gameObject);
         }
        
