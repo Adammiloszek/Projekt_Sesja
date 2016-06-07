@@ -6,6 +6,7 @@ public class PacmanMove : MonoBehaviour
 	public int cheating;
 	GameObject[] ghosts;
     bool waiting;
+    public GameObject pacdot;
 
 	public GhostMovePathInCode scriptOne;
 	/* public GhostMovePathInCode scriptTwo;
@@ -100,7 +101,7 @@ public class PacmanMove : MonoBehaviour
         }
 
        
-        if (co.tag == "GostekZly")
+        if (co.tag =="GostekDobry")
         {
             
             for (int i = 0; i < 100; ++i)
@@ -118,8 +119,16 @@ public class PacmanMove : MonoBehaviour
 
 
 
-        if (co.tag == "GostekDobry")
+        if (co.tag == "GostekZly")
         {
+          //  for (int i = 0; i < 100; ++i)
+            {
+               // GameObject found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
+
+
+                Instantiate(pacdot, new Vector3(2, 2, 0), Quaternion.identity);
+            }
+
             Destroy(co.gameObject);
         }
     }

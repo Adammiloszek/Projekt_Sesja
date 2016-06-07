@@ -24,7 +24,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		// lewy górny róg: (1.89f, 30f)
 		// prawy górny róg: (27f, 30f)
 
-      /*  GameObject found;
+        GameObject found;
         do
         {
             found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
@@ -32,7 +32,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
         } while (found == null);
         
         Instantiate(goodGuy, found.transform.position, Quaternion.identity);
-        Destroy(found); */ // zbedne dla dobrego gracza, prawda ?
+        Destroy(found);  // zbedne dla dobrego gracza, prawda ? nie
 
 	}
 		
