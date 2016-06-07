@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 498956}
   - 212: {fileID: 21244844}
+  - 61: {fileID: 6168792}
   m_Layer: 0
   m_Name: DobryGostek
-  m_TagString: Untagged
+  m_TagString: GostekDobry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,10 +26,23 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7, y: 25.46, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6168792
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.15, y: 8.21}
 --- !u!212 &21244844
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -55,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9fb7891053e157f4eb1b4054202c8f4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4f7a4b22a715aa4b95e820ce621324a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

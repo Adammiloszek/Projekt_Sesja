@@ -99,6 +99,28 @@ public class PacmanMove : MonoBehaviour
             Destroy(co.gameObject);
         }
 
+       
+        if (co.tag == "GostekZly")
+        {
+            
+            for (int i = 0; i < 100; ++i)
+            {
+                GameObject found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
 
-	}
+                if (found != null)
+                {
+                    Destroy(found);
+                }
+            }
+
+            Destroy(co.gameObject);
+        }
+
+
+
+        if (co.tag == "GostekDobry")
+        {
+            Destroy(co.gameObject);
+        }
+    }
 }

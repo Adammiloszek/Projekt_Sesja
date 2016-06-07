@@ -67,6 +67,7 @@
     <Compile Include="Assets\Arkanoid\Scripts\Block.cs" />
     <Compile Include="Assets\Arkanoid\Scripts\Racket.cs" />
     <Compile Include="Assets\Menu\scripts\LoadOnClick.cs" />
+    <Compile Include="Assets\Pacman\scripts\CreateGoodAndBadGuys.cs" />
     <Compile Include="Assets\Pacman\scripts\GhostMove.cs" />
     <Compile Include="Assets\Pacman\scripts\GhostMovePathInCode.cs" />
     <Compile Include="Assets\Pacman\scripts\PacmanMove.cs" />

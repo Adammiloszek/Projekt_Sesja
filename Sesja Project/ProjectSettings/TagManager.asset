@@ -7,6 +7,8 @@ TagManager:
   - Ghost
   - PacMan
   - superDot
+  - GostekZly
+  - GostekDobry
   layers:
   - Default
   - TransparentFX
