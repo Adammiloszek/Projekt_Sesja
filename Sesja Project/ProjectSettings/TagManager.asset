@@ -9,6 +9,7 @@ TagManager:
   - superDot
   - GostekZly
   - GostekDobry
+  - pacdot
   layers:
   - Default
   - TransparentFX
