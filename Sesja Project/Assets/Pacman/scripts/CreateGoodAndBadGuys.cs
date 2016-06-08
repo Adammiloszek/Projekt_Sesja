@@ -6,6 +6,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		public GameObject goodGuy;
 		public GameObject badGuy;
 
+
 		public int connection; // w zaleznosci od znajomosci
 		public int knowledge; // i od wiedzy
 
@@ -68,6 +69,8 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
         } while (found == null);
 
         Instantiate(badGuy, found.transform.position, Quaternion.identity);
+
+
         Destroy(found);
 
 	}
