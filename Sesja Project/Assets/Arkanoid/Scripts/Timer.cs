@@ -5,8 +5,8 @@ using System;
 
 public class Timer : MonoBehaviour {
 
-    private float timer = 60;
-    float bonusTime;
+    public static float timer = 60;
+    static float bonusTime;
 
      public static bool updateON;
 
@@ -38,5 +38,12 @@ public class Timer : MonoBehaviour {
             }
         }
        
+    }
+
+    public static void ResetTimer()
+    {
+        timer = 60;
+        timer += bonusTime;
+        updateON = true;
     }
 }

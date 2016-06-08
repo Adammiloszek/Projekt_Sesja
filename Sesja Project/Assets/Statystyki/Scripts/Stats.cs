@@ -5,7 +5,7 @@ public static class Stats {
 
 
     private static int cheating = 0;
-    private static int connections = 0;
+    private static int connections =0;
     private static int knowledge = 0;
 
     private const int points = 15;

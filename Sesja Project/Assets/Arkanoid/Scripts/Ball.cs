@@ -36,12 +36,11 @@ public class Ball : MonoBehaviour {
             }
 
             //jeśli piłka jest poniżej podstawki to ją zatrzymaj
-             else  if (GetComponent<Rigidbody2D>().position.y < -105)
+             else  if (ball.position.y < -105)
             {
 
 
-               ball.velocity = Vector2.up * 0;
-               ball.velocity = Vector2.right * 0;
+            ball.velocity = new Vector2(0 , 0);
 
                 Timer.updateON = false;
 
@@ -49,13 +48,21 @@ public class Ball : MonoBehaviour {
             
             }
 
+            //zresetuj piłkę jeśli wyleciała poza scene
+            else if (ball.position.x < -120 || ball.position.x > 114)
+        {
+            ball.transform.position = new Vector2(-0.2f, -98.7f);
+            ball.velocity = new Vector2(0 , speed);
+
+        }
+
 
 
             //jeśli wszystkie bloki zbite to zatrzymaj piłkę
             else if (Main.Bloki == 0)
             {
-                GetComponent<Rigidbody2D>().velocity = Vector2.up * 0;
-                GetComponent<Rigidbody2D>().velocity = Vector2.right * 0;
+                ball.velocity = Vector2.up * 0;
+                ball.velocity = Vector2.right * 0;
 
                 Main.Zwyciestwo();
             }

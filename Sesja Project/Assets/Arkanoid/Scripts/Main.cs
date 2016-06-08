@@ -4,9 +4,11 @@ using UnityEngine.UI;
 
 public static class Main  {
 
+    private static int podejscia = 2;
+
     private static int punkty = 0;
 
-    private static int zycia = 3;
+    private static int zycia = 5;
 
     private static int bloki = 0;
 
@@ -54,7 +56,10 @@ public static class Main  {
 
             if(zycia > 0)
             {
-                  //ustaw podstawke
+
+              
+
+                //ustaw podstawke
                 racket.GetComponent<Rigidbody2D>().transform.position = new Vector2(-0.2f, -98.7f);
 
                 //ustaw pilke i ruch piłki
@@ -91,9 +96,21 @@ public static class Main  {
         if (Input.GetKeyDown("space"))
         {
 
-            /*
-             * TODO: koniec / nastepny level
-             */
+            if (Application.loadedLevelName == "scena")
+            {
+                Application.LoadLevel("scena1");
+            }
+            if (Application.loadedLevelName == "scena1")
+            {
+                Application.LoadLevel("scena2");
+            }
+            if (Application.loadedLevelName == "scena2")
+            {
+                /*
+              * TODO: zwyciestwo, koniec 
+              */
+            }
+
         }
     }
 
@@ -108,18 +125,31 @@ public static class Main  {
 
         if (Input.GetKeyDown("space"))
         {
-            /*
-           * TODO: koniec 
-           */
+            podejscia--;
+
+
+            //for debug
+            textInfo.GetComponent<Text>().text = "wciesnieto";
+
+            if (podejscia == 1)
+            {
+               
+                zycia = 5;
+                punkty = 0;
+                bloki = 0;
+                Ball.updateON = true;
+                Timer.ResetTimer();
+                Application.LoadLevel("scena");
+                
+            }
+            else
+            {
+                /*
+         * TODO: porażka koniec
+         */
+            }
+
         }
     }
-    //// Use this for initialization
-    //void Start () {
-
-    //}
-
-    //// Update is called once per frame
-    //void Update () {
-
-    //}
+  
 }
