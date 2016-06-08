@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ghost
   - PacMan
+  - Student
   layers:
   - Default
   - TransparentFX
