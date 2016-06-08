@@ -27,7 +27,7 @@ public class PacmanMove : MonoBehaviour
 	void Update ()
 	{
 		GameObject[] ghosts = GameObject.FindGameObjectsWithTag ("Ghost");
-		Debug.Log ("rozmiar ghosts"  + ghosts.Length);
+		//Debug.Log ("rozmiar ghosts"  + ghosts.Length);
 
 		if ( ghosts.Length > 0)
 		scriptOne = ghosts [0].GetComponent<GhostMovePathInCode> ();
@@ -105,15 +105,11 @@ public class PacmanMove : MonoBehaviour
        
         if (co.tag =="GostekDobry")
         {
-            
+
+            GameObject[] found = GameObject.FindGameObjectsWithTag("pacdot");
             for (int i = 0; i < 100; ++i)
             {
-                GameObject found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
-
-                if (found != null)
-                {
-                    Destroy(found);
-                }
+                Destroy(found[Random.Range(1, found.Length)]);
             }
 
             Destroy(co.gameObject);
@@ -125,10 +121,7 @@ public class PacmanMove : MonoBehaviour
         {
            for (int i = 0; i < 100; ++i)
             {
-               // GameObject found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
-
-
-                Instantiate(pacdot, new Vector3(i, 2), Quaternion.identity);
+              Instantiate(pacdot, new Vector3(Random.Range(1, 30), Random.Range(1, 30)), Quaternion.identity);
             }
 
             Destroy(co.gameObject);

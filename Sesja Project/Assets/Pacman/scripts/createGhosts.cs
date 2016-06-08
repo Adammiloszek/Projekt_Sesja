@@ -38,7 +38,7 @@ public class createGhosts : MonoBehaviour {
 
 		for (int i = 1; i <= ghosts.Length - knowledge; i++) {
 
-			Instantiate(ghosts[i-1], startingVectors[i-1], Quaternion.identity);
+		//	Instantiate(ghosts[i-1], startingVectors[i-1], Quaternion.identity);
 
 	
 		}
