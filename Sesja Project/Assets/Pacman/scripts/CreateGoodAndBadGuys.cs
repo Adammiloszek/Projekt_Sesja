@@ -26,14 +26,16 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		// prawy górny róg: (27f, 30f)
 
 		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
-		GameObject randomPacdot = pacdots[Random.Range(0, pacdots.Length)];
 
+		if (pacdots != null && pacdots.Length > 0) {
+			GameObject randomPacdot = pacdots [Random.Range (0, pacdots.Length)];
+	
 
-		if (pacdots.Length > 30) {
-			Instantiate(goodGuy, randomPacdot.transform.position, Quaternion.identity);
-			Destroy(randomPacdot);  
+			if (pacdots.Length > 30) {
+				Instantiate(goodGuy, randomPacdot.transform.position, Quaternion.identity);
+				Destroy(randomPacdot);  
+			}
 		}
-       
 
 	}
 		
@@ -63,13 +65,16 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 
 		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
-		GameObject randomPacdot = pacdots[Random.Range(0, pacdots.Length)];
+
+		if (pacdots != null && pacdots.Length > 0) {
+			GameObject randomPacdot = pacdots [Random.Range (0, pacdots.Length)];
 
 
 
-		if (pacdots.Length > 30) {
-			Instantiate (badGuy, randomPacdot.transform.position, Quaternion.identity);
-			Destroy(randomPacdot);
+			if (pacdots.Length > 30  && pacdots.Length > 0) {
+				Instantiate (badGuy, randomPacdot.transform.position, Quaternion.identity);
+				Destroy (randomPacdot);
+			}
 		}
 
 
@@ -80,6 +85,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		// Use this for initialization
 		void Start () {
+
 		Debug.Log ("start creating in 3s or 5s");
 		InvokeRepeating("LaunchWaitForBadGuy", 3, 15F);
 		InvokeRepeating("LaunchWaitForGoodGuy", 5, 7F);
