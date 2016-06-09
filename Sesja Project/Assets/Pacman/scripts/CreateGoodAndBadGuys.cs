@@ -25,15 +25,15 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		// lewy górny róg: (1.89f, 30f)
 		// prawy górny róg: (27f, 30f)
 
-        GameObject found;
-        do
-        {
-            found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
+		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+		GameObject randomPacdot = pacdots[Random.Range(0, pacdots.Length)];
 
-        } while (found == null);
-        
-        Instantiate(goodGuy, found.transform.position, Quaternion.identity);
-        Destroy(found);  
+
+		if (pacdots.Length > 30) {
+			Instantiate(goodGuy, randomPacdot.transform.position, Quaternion.identity);
+			Destroy(randomPacdot);  
+		}
+       
 
 	}
 		
@@ -61,17 +61,17 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		Debug.Log ("bum bad guy appears");
 
-        GameObject found;
-        do
-        {
-            found = GameObject.Find("pacdot (" + Random.Range(1, 700) + ")");
 
-        } while (found == null);
-
-        Instantiate(badGuy, found.transform.position, Quaternion.identity);
+		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+		GameObject randomPacdot = pacdots[Random.Range(0, pacdots.Length)];
 
 
-        Destroy(found);
+
+		if (pacdots.Length > 30) {
+			Instantiate (badGuy, randomPacdot.transform.position, Quaternion.identity);
+			Destroy(randomPacdot);
+		}
+
 
 	}
 

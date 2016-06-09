@@ -127,7 +127,7 @@ public class PacmanMove : MonoBehaviour
 
            for (int i = 0; i < 30; ++i)
             {
-			  GameObject randomWaypoint = waypoints[Random.Range(1, waypoints.Length)];
+			  	GameObject randomWaypoint = waypoints[Random.Range(1, waypoints.Length)];
 				Instantiate(pacdot, new Vector2(randomWaypoint.transform.position.x, randomWaypoint.transform.position.y), Quaternion.identity);
             }
 
