@@ -16,11 +16,13 @@ public class pacdot : MonoBehaviour {
         }
     }
 
-    void OnCollisionStay(Collision collisionInfo)
+    void OnCollisionEnter(Collision collisionInfo)
     {
+		Debug.Log ("destroyed");
         if (collisionInfo.gameObject.name == "maze")
         {
             Destroy(collisionInfo.gameObject);
+
         }
     }
 

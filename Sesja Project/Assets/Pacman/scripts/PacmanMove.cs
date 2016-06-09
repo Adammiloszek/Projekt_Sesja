@@ -119,9 +119,14 @@ public class PacmanMove : MonoBehaviour
 
         if (co.tag == "GostekZly")
         {
-           for (int i = 0; i < 100; ++i)
+			GameObject[] waypoints = GameObject.FindGameObjectsWithTag("waypoint");
+
+
+
+           for (int i = 0; i < 30; ++i)
             {
-              Instantiate(pacdot, new Vector3(Random.Range(1, 30), Random.Range(1, 30)), Quaternion.identity);
+			  GameObject randomWaypoint = waypoints[Random.Range(1, waypoints.Length)];
+				Instantiate(pacdot, new Vector2(randomWaypoint.transform.position.x, randomWaypoint.transform.position.y), Quaternion.identity);
             }
 
             Destroy(co.gameObject);

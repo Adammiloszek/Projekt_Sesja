@@ -16,7 +16,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		Debug.Log ("waiting for goodGuy"); 
 
-		yield return new WaitForSeconds (5 - connection);
+		yield return new WaitForSeconds (15 - connection);
 
 		Debug.Log ("bum good guy appears");
 
@@ -33,7 +33,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
         } while (found == null);
         
         Instantiate(goodGuy, found.transform.position, Quaternion.identity);
-        Destroy(found);  // zbedne dla dobrego gracza, prawda ? nie
+        Destroy(found);  
 
 	}
 		
@@ -57,7 +57,7 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 
 		Debug.Log ("waiting for BadGuy"); 
 
-		yield return new WaitForSeconds (5 + connection - knowledge);
+		yield return new WaitForSeconds (15 + connection - knowledge);
 
 		Debug.Log ("bum bad guy appears");
 

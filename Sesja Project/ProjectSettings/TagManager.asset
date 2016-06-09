@@ -10,6 +10,7 @@ TagManager:
   - GostekZly
   - GostekDobry
   - pacdot
+  - waypoint
   layers:
   - Default
   - TransparentFX
