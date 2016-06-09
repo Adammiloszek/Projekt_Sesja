@@ -12849,7 +12849,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &870693123
 GameObject:
   m_ObjectHideFlags: 0
@@ -32441,8 +32441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b46824e35e3cb4ab92eb5e3eaf7899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodGuy: {fileID: 177730, guid: 2df59e05ff9e45e4e907bc80f43480e8, type: 2}
-  badGuy: {fileID: 121926, guid: a606e315108cee34c8a69dc7619eddb6, type: 2}
+  goodGuy: {fileID: 176320, guid: 2df59e05ff9e45e4e907bc80f43480e8, type: 2}
+  badGuy: {fileID: 141676, guid: a606e315108cee34c8a69dc7619eddb6, type: 2}
   connection: 6
   knowledge: 6
 --- !u!1 &2138545543
