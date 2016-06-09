@@ -5732,6 +5732,10 @@ Prefab:
       propertyPath: speed
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 11409850, guid: b8b9ef4cd5fd921498af633e537e14ea, type: 2}
+      propertyPath: cheating
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8b9ef4cd5fd921498af633e537e14ea, type: 2}
   m_IsPrefabParent: 0
@@ -32394,6 +32398,7 @@ GameObject:
   - 4: {fileID: 2137817645}
   - 114: {fileID: 2137817646}
   - 114: {fileID: 2137817647}
+  - 114: {fileID: 2137817648}
   m_Layer: 0
   m_Name: controller
   m_TagString: Untagged
@@ -32445,6 +32450,17 @@ MonoBehaviour:
   badGuy: {fileID: 141676, guid: a606e315108cee34c8a69dc7619eddb6, type: 2}
   connection: 6
   knowledge: 6
+--- !u!114 &2137817648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137817644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2a96d0fb229f342bb38624eb847b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138545543
 GameObject:
   m_ObjectHideFlags: 0

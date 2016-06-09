@@ -6,10 +6,13 @@ public class CreateGoodAndBadGuys : MonoBehaviour {
 		public GameObject goodGuy;
 		public GameObject badGuy;
 
+		// do testów
+		//public int connection; // w zaleznosci od znajomosci
+		//public int knowledge; // i od wiedzy
 
-		public int connection; // w zaleznosci od znajomosci
-		public int knowledge; // i od wiedzy
 
+	int connection = Stats.Connections;
+	int knowledge = Stats.Knowledge;
 
 	IEnumerator WaitForGoodGuy ()
 	{

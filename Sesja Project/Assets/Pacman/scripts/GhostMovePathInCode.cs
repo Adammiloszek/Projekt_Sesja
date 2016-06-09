@@ -16,7 +16,7 @@ public class GhostMovePathInCode : MonoBehaviour {
 		if (this.gameObject.name == "inky(Clone)") {
 
 			waypoints = new Transform[4];
-			Debug.Log("blinky ");
+			Debug.Log("inky ");
 			waypoints [0] = GameObject.Find ("Waypoint50").transform;
 			waypoints [1] = GameObject.Find ("Waypoint52").transform;
 			waypoints [2] = GameObject.Find ("Waypoint42").transform;
@@ -27,10 +27,10 @@ public class GhostMovePathInCode : MonoBehaviour {
 		if (this.gameObject.name == "blinky(Clone)") {
 			waypoints = new Transform[4];
 			Debug.Log("blinky ");
-			waypoints [0] = GameObject.Find ("Waypoint44").transform;
-			waypoints [1] = GameObject.Find ("Waypoint23").transform;
-			waypoints [2] = GameObject.Find ("Waypoint26").transform;
-			waypoints [3] = GameObject.Find ("Waypoint46").transform;
+			waypoints [0] = GameObject.Find ("Waypoint50").transform;
+			waypoints [1] = GameObject.Find ("Waypoint52").transform;
+			waypoints [2] = GameObject.Find ("Waypoint42").transform;
+			waypoints [3] = GameObject.Find ("Waypoint16").transform;
 
 
 		}
@@ -91,8 +91,10 @@ public class GhostMovePathInCode : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D co)
 	{
-		if (co.tag == "PacMan")
-			Destroy(co.gameObject);
+		if (co.tag == "PacMan") {
+			Destroy (co.gameObject);
+			Application.LoadLevel ("Menu_Scene");
+		}
 	}
 }
 

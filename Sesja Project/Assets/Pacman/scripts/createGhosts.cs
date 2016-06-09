@@ -7,10 +7,25 @@ public class createGhosts : MonoBehaviour {
 	public GameObject clyde;
 	public GameObject inky;
 	public GameObject blinky;
-	public int knowledge; // w zaleznosci od wiedzy od 0 do 4, 0 wiedzy ->  4 duszki, 4 wiedzy -> 0 duszków
+	// public int knowledge; // w zaleznosci od wiedzy od 0 do 4, 0 wiedzy ->  4 duszki, 4 wiedzy -> 0 duszków do testów
+
+
+	// ze wiedza max 10; to podzielic przez 2 i podloge - 2
+	// wiedzy 2 -> jak 0
+	// wiedzy 3 -> jak 0 bo podloga
+	// wiedzy 4 -> jak 1
+	// wiedzy 6 -> jak 2
+	// wiedza 9 ->   (9-2) /2 = 7/2 =  jak 3
+
+	int knowledge = (Stats.Knowledge-2)/2;
+
 
 	// Use this for initialization
 	void Start () {
+		
+		if (knowledge < 0 ) {
+			knowledge = 0;
+		}
 
 		GameObject[] ghosts = new GameObject[4];
 		ghosts [0] = pinky;
@@ -22,23 +37,15 @@ public class createGhosts : MonoBehaviour {
 		startingVectors [0] = new Vector2 (1.89f, 30f); // lewy górny róg
 		startingVectors [1] = new Vector2 (27.00f, 30.00f); // prawy górny róg
 		startingVectors [2] = new Vector2 (2f, 2.27f); // lewy dolny róg
-		startingVectors [3] = new Vector2 (27f, 2f); // prawy dolny róg
+		startingVectors [3] = new Vector2 (27f, 3f); // prawy dolny róg
+	
 
-
-		/*
-		GameObject pinky = GameObject.Find ("pinky");
-		GameObject clyde = GameObject.Find ("clyde");
-		GameObject inky = GameObject.Find ("inky");
-		GameObject blinky = GameObject.Find ("blinky"); */
-		
-	/*	Instantiate (pinky, new Vector2 ((-13f+15f), (10f+20f)), Quaternion.identity);
-		Instantiate (clyde, new Vector2(12.00f+15.0f, -18.00f+20.0f), Quaternion.identity);
-		Instantiate (inky, new Vector2 (26.82f, 29.94f), Quaternion.identity);
-		Instantiate (blinky, new Vector2 (15f, 17f), Quaternion.identity);	*/
+		Debug.Log (knowledge + "K");
+		Debug.Log (ghosts.Length + "L");
 
 		for (int i = 1; i <= ghosts.Length - knowledge; i++) {
 
-		//	Instantiate(ghosts[i-1], startingVectors[i-1], Quaternion.identity);
+			Instantiate(ghosts[i-1], startingVectors[i-1], Quaternion.identity);
 
 	
 		}

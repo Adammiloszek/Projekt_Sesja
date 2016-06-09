@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PacmanMove : MonoBehaviour
 {
-	public int cheating;
+	// public int cheating; do testów
+	int cheating = Stats.Cheating;
 	GameObject[] ghosts;
 	public GameObject pacdot;	
 	private GameObject[] pacdots;	
@@ -42,7 +43,7 @@ public class PacmanMove : MonoBehaviour
 	{
 
 		Debug.Log ("waiting"); 
-		yield return new WaitForSeconds (cheating);
+		yield return new WaitForSeconds (cheating+2);
 
 		Debug.Log ("doing shit");
 
