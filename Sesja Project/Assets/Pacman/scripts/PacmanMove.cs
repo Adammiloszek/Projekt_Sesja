@@ -4,7 +4,7 @@ using System.Collections;
 public class PacmanMove : MonoBehaviour
 {
 	// public int cheating; do testów
-	int cheating = Stats.Cheating;
+	int cheating = (Stats.Cheating-4)/2;
 	GameObject[] ghosts;
 	public GameObject pacdot;	
 	private GameObject[] pacdots;	
@@ -22,6 +22,10 @@ public class PacmanMove : MonoBehaviour
 
 	void Start ()
 	{
+		
+		if (cheating<0) {
+			cheating = 0;
+		}
 		pacdots = GameObject.FindGameObjectsWithTag("pacdot");
 		Debug.Log (pacdots.Length + "pacdots");
 		dest = transform.position;
@@ -43,7 +47,7 @@ public class PacmanMove : MonoBehaviour
 	{
 
 		Debug.Log ("waiting"); 
-		yield return new WaitForSeconds (cheating+2);
+		yield return new WaitForSeconds (cheating + 1);
 
 		Debug.Log ("doing shit");
 
