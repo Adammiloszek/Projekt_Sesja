@@ -5,13 +5,7 @@ public class pacdot : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D co)
     {
-		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
 
-		if (co.name == "pacman" && pacdots.Length == 1)
-		{
-			Destroy(gameObject);
-			Application.LoadLevel("Menu_Scene");
-		}
 
 		if (co.name == "pacman")
         {
