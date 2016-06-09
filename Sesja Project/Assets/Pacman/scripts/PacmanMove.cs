@@ -109,7 +109,9 @@ public class PacmanMove : MonoBehaviour
             GameObject[] found = GameObject.FindGameObjectsWithTag("pacdot");
             for (int i = 0; i < 100; ++i)
             {
-                Destroy(found[Random.Range(1, found.Length)]);
+				if (found.Length > 0) {
+					Destroy (found [Random.Range (0, found.Length)]);
+				}
             }
 
             Destroy(co.gameObject);
