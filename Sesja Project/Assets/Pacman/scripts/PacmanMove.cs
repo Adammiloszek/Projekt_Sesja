@@ -6,6 +6,7 @@ public class PacmanMove : MonoBehaviour
 	public int cheating;
 	GameObject[] ghosts;
 	public GameObject pacdot;	
+	private GameObject[] pacdots;	
 
     bool waiting;
  
@@ -20,6 +21,8 @@ public class PacmanMove : MonoBehaviour
 
 	void Start ()
 	{
+		pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+		Debug.Log (pacdots.Length + "pacdots");
 		dest = transform.position;
 	}
 
@@ -124,10 +127,14 @@ public class PacmanMove : MonoBehaviour
 			GameObject[] waypoints = GameObject.FindGameObjectsWithTag("waypoint");
 
 
-
-           for (int i = 0; i < 30; ++i)
+           for (int i = 0; i < 100; ++i)
             {
 			  	GameObject randomWaypoint = waypoints[Random.Range(1, waypoints.Length)];
+
+
+				GameObject randomPlaceForDot = pacdots[Random.Range(0, pacdots.Length)];
+
+
 				Instantiate(pacdot, new Vector2(randomWaypoint.transform.position.x, randomWaypoint.transform.position.y), Quaternion.identity);
             }
 
