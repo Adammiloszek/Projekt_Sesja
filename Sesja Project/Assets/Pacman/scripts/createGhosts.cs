@@ -34,10 +34,10 @@ public class createGhosts : MonoBehaviour {
 		ghosts [3] = blinky;
 
 		Vector2[] startingVectors = new Vector2[4];
-		startingVectors [0] = new Vector2 (1.89f, 30f); // lewy górny róg
-		startingVectors [1] = new Vector2 (27.00f, 30.00f); // prawy górny róg
-		startingVectors [2] = new Vector2 (2f, 2.27f); // lewy dolny róg
-		startingVectors [3] = new Vector2 (27f, 3f); // prawy dolny róg
+		startingVectors [0] = new Vector2 (15f, 17f); // lewy górny róg
+		startingVectors [1] = new Vector2 (15f, 17f); // prawy górny róg
+        startingVectors[2] = new Vector2(15f, 17f); // lewy dolny róg
+        startingVectors[3] = new Vector2(15f, 17f); // prawy dolny róg
 	
 
 		Debug.Log (knowledge + "K");
