@@ -5,36 +5,61 @@ using System;
 
 public class Timer : MonoBehaviour {
 
-    public static float timer = 60;
-    static float bonusTime;
+    private const float startTime = 45;
+    private static float timer = 0;
+    private static float bonusTime;
 
-     public static bool updateON;
+
+    private static bool updateON;
+
+    public static bool UpdateON
+    {
+        get { return updateON; }
+        set { updateON = value; }
+    }
 
     // Use this for initialization
     void Start () {
-        bonusTime = Stats.Connections * 5;
+
+        timer = startTime;
+        bonusTime = Stats.Connections * 2;
         timer += bonusTime;
 
-        updateON = true;
+        GameObject textInfo = GameObject.Find("Text (3)");
+
+        string s = Convert.ToString(timer);
+        s += ".0000";
+        char[] tab = s.ToCharArray();
+        s = new string(tab, 0, 5);
+
+        textInfo.GetComponent<Text>().text = "Czas: " + s;
+
+        //updateON = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        
 
         if (updateON)
         {
             timer -= Time.deltaTime;
-            Debug.Log(timer);
+            //Debug.Log(timer);
 
             GameObject textInfo = GameObject.Find("Text (3)");
 
-            textInfo.GetComponent<Text>().text = Convert.ToString(timer);
+            string s = Convert.ToString(timer);
+            s += "00000";
+            char[] tab = s.ToCharArray();
+            s = new string(tab, 0, 5);
+
+            textInfo.GetComponent<Text>().text = "Czas: " + s;
 
             if (timer <= 0)
             {
                 textInfo.GetComponent<Text>().text = "Koniec czasu";
-                updateON = false;
-                Main.Porazka();
+                //updateON = false;
+                Main.KoniecCzasu(true, false);
             }
         }
        
@@ -42,8 +67,8 @@ public class Timer : MonoBehaviour {
 
     public static void ResetTimer()
     {
-        timer = 60;
-        timer += bonusTime;
+        //timer = 60;
+        //timer += bonusTime;
         updateON = true;
     }
 }

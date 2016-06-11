@@ -28,7 +28,7 @@ public class Racket : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 
 
         h = Input.GetAxisRaw("Horizontal");

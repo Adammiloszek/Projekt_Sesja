@@ -20,7 +20,13 @@ public class StrongBlock : MonoBehaviour {
     {
         // jeśli uderzono 2 razy usun blok
         life--;
-       
+
+        if (life == 1)
+        {
+            GameObject go = GameObject.Find("blockchange");
+            Sprite sprt = go.GetComponent<SpriteRenderer>().sprite;
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprt;
+        }
 
         if (life <= 0)
         {

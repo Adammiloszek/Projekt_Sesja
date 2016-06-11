@@ -4,18 +4,18 @@ using UnityEngine.UI;
 
 public class DisplayLife : MonoBehaviour {
 
-    public Text komponent;
+    Text komponent;
     int zycia = Main.Zycia;
 
     void Start()
     {
         komponent = GetComponent<Text>();
-        komponent.text = zycia.ToString();
+        komponent.text = "Życia: " + zycia.ToString();
     }
 
     void Update()
     {
         zycia = Main.Zycia;
-        komponent.text = zycia.ToString();
+        komponent.text = "Życia: " + zycia.ToString();
     }
 }

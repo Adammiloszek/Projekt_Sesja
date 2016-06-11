@@ -11,3 +11,11 @@ EditorBuildSettings:
     path: Assets/Arkanoid/Scenes/scena1.unity
   - enabled: 1
     path: Assets/Arkanoid/Scenes/scena2.unity
+  - enabled: 1
+    path: Assets/Arkanoid/Scenes/scena_koncowa.unity
+  - enabled: 1
+    path: Assets/Arkanoid/Scenes/scena_startowa.unity
+  - enabled: 1
+    path: Assets/Arkanoid/Scenes/scena_startowa2.unity
+  - enabled: 1
+    path: Assets/Arkanoid/Scenes/scena_startowa3.unity

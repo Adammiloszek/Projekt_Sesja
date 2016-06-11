@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public static class Main  {
 
@@ -8,11 +9,13 @@ public static class Main  {
 
     private static int punkty = 0;
 
-    private static int zycia = 5;
+    private static int zycia = 3;
 
     private static int bloki = 0;
 
     private static GameObject textInfo;
+
+    private static GameObject textKlawisz;
 
     private static GameObject racket;
 
@@ -41,20 +44,20 @@ public static class Main  {
     static public void ResetBall()
     {
 
-        textInfo = GameObject.Find("Text (2)");
+        textKlawisz = GameObject.Find("klawiszInfo");
 
         racket = GameObject.Find("racket");
 
         ball = GameObject.Find("ball");
 
 
-        textInfo.GetComponent<Text>().text = "Wciśnij spacje";
+        textKlawisz.GetComponent<Text>().text = "wciśnij SPACJĘ";
 
         if (Input.GetKeyDown("space"))
         {
             zycia--;
 
-            if(zycia > 0)
+            if(zycia >= 0)
             {
 
               
@@ -66,9 +69,11 @@ public static class Main  {
                 ball.GetComponent<Rigidbody2D>().velocity = Vector2.up * 200;
                 ball.GetComponent<Rigidbody2D>().transform.position = new Vector2(-1.8f, -74);
 
-                textInfo.GetComponent<Text>().text = "";
+                textKlawisz.GetComponent<Text>().text = "";
 
-                Timer.updateON = true;
+                
+
+                Ball.ChooseBallPosition = true;
             }
             else
             {
@@ -76,40 +81,36 @@ public static class Main  {
                 Porazka();
                
             }
-          
-
-          
-
         }
-        
-
     }
 
-  public static void Zwyciestwo()
+  public static void Zwyciestwo(int wynik, double ocena)
     {
         textInfo = GameObject.Find("Text (2)");
+        textKlawisz = GameObject.Find("klawiszInfo");
 
-        textInfo.GetComponent<Text>().text = "Zwycięstwo";
+        
 
-        Timer.updateON = false;
+        textInfo.GetComponent<Text>().text = "Zaliczyłeś! :) Twój wynik to " + punkty + "/1200. Twoja ocena to " + ocena;
+        textKlawisz.GetComponent<Text>().text = "wciśnij ENTER";
 
-        if (Input.GetKeyDown("space"))
+        Timer.UpdateON = false;
+
+        if (Input.GetKeyDown("return"))
         {
+            zycia = 3;
+            punkty = 0;
+            bloki = 0;
+            podejscia = 2;
+            Ball.ChooseBallPosition = true;
+            textKlawisz.GetComponent<Text>().text = "wciśnięto";
+            CheckResult.UpdateON = false;
 
-            if (Application.loadedLevelName == "scena")
-            {
-                Application.LoadLevel("scena1");
-            }
-            if (Application.loadedLevelName == "scena1")
-            {
-                Application.LoadLevel("scena2");
-            }
-            if (Application.loadedLevelName == "scena2")
-            {
-                /*
-              * TODO: zwyciestwo, koniec 
-              */
-            }
+
+            /*
+            * TODO: zwyciestwo, koniec, egzamin zaliczony
+            * SceneManager.LoadScene("");
+            */
 
         }
     }
@@ -117,39 +118,227 @@ public static class Main  {
     public static void Porazka()
     {
         textInfo = GameObject.Find("Text (2)");
+        textKlawisz = GameObject.Find("klawiszInfo");
+
+        string aktywnaScena = SceneManager.GetActiveScene().name;
+
+        Ball.UpdateON = false;
+
+
+
         
-        Ball.updateON = false;
-  
+        
 
-        textInfo.GetComponent<Text>().text = "Porażka, wciśnij spacje";
 
-        if (Input.GetKeyDown("space"))
+
+        if (podejscia == 2)
+            textInfo.GetComponent<Text>().text = "Nie zaliczyłeś, Twój wynik to " + punkty + "/1200, Twoja ocena to 2 :( , ale na szczęście jest II termin :)";
+        else
+            textInfo.GetComponent<Text>().text = "Nie zaliczyłeś, Twój wynik to " + punkty + "/1200, Twoja ocena to 2 :( , III terminu już nie ma :(";
+
+        textKlawisz.GetComponent<Text>().text = "wciśnij ENTER";
+
+        
+        if (Input.GetKeyDown("return"))
         {
             podejscia--;
 
-
-            //for debug
-            textInfo.GetComponent<Text>().text = "wciesnieto";
-
             if (podejscia == 1)
             {
-               
-                zycia = 5;
+                Timer.UpdateON = false;
+                zycia = 3;
                 punkty = 0;
                 bloki = 0;
-                Ball.updateON = true;
-                Timer.ResetTimer();
-                Application.LoadLevel("scena");
-                
+                Ball.ChooseBallPosition = true;
+                SceneManager.LoadScene("scena");
+                    
             }
             else
             {
+                Timer.UpdateON = false;
+                textKlawisz.GetComponent<Text>().text = "wciśnięto";
+                zycia = 3;
+                punkty = 0;
+                bloki = 0;
+                Ball.ChooseBallPosition = true;
+                podejscia = 2;
+                CheckResult.UpdateON = false;
                 /*
-         * TODO: porażka koniec
-         */
+                * TODO: porażka koniec, egzamin niezaliczony
+                 * SceneManager.LoadScene("");
+                 * 
+                 * 
+                */
             }
 
         }
+        
+        
     }
+
+    public static void KoniecCzasu(bool b1, bool b2)
+    {
+        textInfo = GameObject.Find("Text (2)");
+        textKlawisz = GameObject.Find("klawiszInfo");
+
+        string aktywnaScena = SceneManager.GetActiveScene().name;
+
+        Ball.UpdateON = false;
+        if(b2)
+            Timer.UpdateON = false;
+
+        if (zycia == 0 && !b1)
+        {
+            textInfo.GetComponent<Text>().text = "Niestety zostałeś przyłapany na ściąganiu...";
+        }
+        else if (aktywnaScena == "scena" && b2)
+        {
+            textInfo.GetComponent<Text>().text = "Nieźle! Rozwiązałeś I zadanie przed końcem czasu! :)";
+        }
+        else if (aktywnaScena == "scena")
+        {
+            textInfo.GetComponent<Text>().text = "Czas na I zadanie się skończył, pora na następne...";
+        }
+        else if (aktywnaScena == "scena1" && b2)
+        {
+            textInfo.GetComponent<Text>().text = "Świetnie! Rozwiązałeś II zadanie przed końcem czasu! :)";
+        }
+        else if (aktywnaScena == "scena1")
+        {
+            textInfo.GetComponent<Text>().text = "Czas na II zadanie się skończył, pora na III...";
+        }
+        else if (aktywnaScena == "scena2" && b2)
+        {
+            textInfo.GetComponent<Text>().text = "Brawo! Rozwiązałeś I zadanie przed końcem czasu! :) Za chwilę poznasz wynik egzaminu...";
+        }
+        else if (aktywnaScena == "scena2")
+        {
+            textInfo.GetComponent<Text>().text = "Koniec egzaminu, za chwilę poznasz wynik...";
+        }
+
+        textKlawisz.GetComponent<Text>().text = "wciśnij ENTER";
+
+
+
+        if (Input.GetKeyDown("return"))
+        {
+            bloki = 0;
+            Timer.UpdateON = false;
+            if (zycia == 0 && !b1)
+            {
+                zycia--;
+                SceneManager.LoadScene("scena_koncowa");
+            }
+            else if (aktywnaScena == "scena")
+            {
+                Ball.ChooseBallPosition = true;
+                SceneManager.LoadScene("scena1");
+            }
+            else if (aktywnaScena == "scena1")
+            {
+                Ball.ChooseBallPosition = true;
+                SceneManager.LoadScene("scena2");
+            }
+            else if (aktywnaScena == "scena2")
+            {
+                Timer.UpdateON = false;
+                SceneManager.LoadScene("scena_koncowa");
+            }
+        }
+    }
+
+
+
+
+    //public static void Zwyciestwo()
+    //{
+    //    textInfo = GameObject.Find("Text (2)");
+    //    textKlawisz = GameObject.Find("klawiszInfo");
+
+    //    textInfo.GetComponent<Text>().text = "Zaliczyłeś! :)";
+    //    textKlawisz.GetComponent<Text>().text = "wciśnij SPACJĘ";
+
+    //    Timer.UpdateON = false;
+
+    //    if (Input.GetKeyDown("space"))
+    //    {
+
+    //        if (SceneManager.GetActiveScene().name == "scena")
+    //        {
+    //            Ball.ChooseBallPosition = true;
+    //            SceneManager.LoadScene("scena1");
+    //        }
+    //        if (SceneManager.GetActiveScene().name == "scena1")
+    //        {
+    //            Ball.ChooseBallPosition = true;
+    //            SceneManager.LoadScene("scena2");
+    //        }
+    //        if (SceneManager.GetActiveScene().name == "scena2")
+    //        {
+    //            Ball.UpdateON = false;
+    //            textKlawisz.GetComponent<Text>().text = "wciśnięto";
+    //            /*
+    //            * TODO: zwyciestwo, koniec, egzamin zaliczony
+    //            */
+    //        }
+
+    //    }
+    //}
+
+    //public static void Porazka()
+    //{
+    //    textInfo = GameObject.Find("Text (2)");
+    //    textKlawisz = GameObject.Find("klawiszInfo");
+
+    //    Ball.UpdateON = false;
+
+    //    if (podejscia == 2)
+    //        textInfo.GetComponent<Text>().text = "Niezaliczyłeś :( , ale na szczęście jest II termin :)";
+    //    else
+    //        textInfo.GetComponent<Text>().text = "Niezaliczyłeś :( , III terminu już nie ma :(";
+
+    //    textKlawisz.GetComponent<Text>().text = "wciśnij ENTER";
+
+        
+    //    if (Input.GetKeyDown("return"))
+    //    {
+    //        podejscia--;
+
+
+    //        //for debug
+    //        //textInfo.GetComponent<Text>().text = "wciesnieto";
+
+    //        if (podejscia == 1)
+    //        {
+    //            Timer.UpdateON = false;
+    //            zycia = 3;
+    //            punkty = 0;
+    //            bloki = 0;
+    //            Ball.ChooseBallPosition = true;
+    //            SceneManager.LoadScene("scena");
+                    
+                    
+    //            //Ball.UpdateON = true;
+    //            //Timer.ResetTimer();
+    //            //Application.LoadLevel("scena");
+                    
+                    
+    //        }
+    //        else
+    //        {
+    //            Timer.UpdateON = false;
+    //            textKlawisz.GetComponent<Text>().text = "wciśnięto";
+    //            zycia = 3;
+    //            punkty = 0;
+    //            bloki = 0;
+    //            Ball.ChooseBallPosition = true;
+    //            podejscia = 2;
+                
+    //        /*
+    //        * TODO: porażka koniec, egzamin niezaliczony
+    //        */
+    //        }
+
+    //    }
   
 }
