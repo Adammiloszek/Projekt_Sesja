@@ -65,6 +65,8 @@ public class Stats_Changing : MonoBehaviour {
             Stats.StartCheating = Stats.Cheating;
             Stats.StartConnections = Stats.Connections;
             Stats.StartKnowledge = Stats.Knowledge;
+
+			Application.LoadLevel ("pacman");
         }
     }
 }

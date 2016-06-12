@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -65,11 +63,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Arkanoid\Ball.cs" />
-    <Compile Include="Assets\Arkanoid\Racket.cs" />
-    <Compile Include="Assets\Block.cs" />
-    <Compile Include="Assets\inicjacja.cs" />
-    <Compile Include="Assets\input.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\Ball.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\Block.cs" />
+    <Compile Include="Assets\Arkanoid\Scripts\Racket.cs" />
+    <Compile Include="Assets\Menu\scripts\LoadOnClick.cs" />
+    <Compile Include="Assets\Pacman\scripts\CreateGoodAndBadGuys.cs" />
+    <Compile Include="Assets\Pacman\scripts\GhostMove.cs" />
+    <Compile Include="Assets\Pacman\scripts\GhostMovePathInCode.cs" />
+    <Compile Include="Assets\Pacman\scripts\PacmanMove.cs" />
+    <Compile Include="Assets\Pacman\scripts\createGhosts.cs" />
+    <Compile Include="Assets\Pacman\scripts\pacdot.cs" />
+    <Compile Include="Assets\Pacman\scripts\superDot.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\Display.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\DisplayCheating.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\DisplayConnections.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\DisplayRemaining.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\Stats.cs" />
+    <Compile Include="Assets\Statystyki\Scripts\Stats_Changing.cs" />
+    <Compile Include="Assets\Wydzial\scripts\BonusDoPokoju.cs" />
+    <Compile Include="Assets\Wydzial\scripts\inicjacja.cs" />
+    <Compile Include="Assets\Wydzial\scripts\input.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
