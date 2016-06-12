@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour {
 
-    public float cheatingSpeed = 0.02f;
+    public float cheatingSpeed = (float)Stats.Cheating / 500f + 0.02f;
     public Slider slider;
     private bool studentInRange;
     private float currentPoints;
@@ -39,5 +39,11 @@ public class playerController : MonoBehaviour {
     {
         if (studentInRange == true) currentPoints += cheatingSpeed;
         slider.value = currentPoints;
+
+        if (slider.value >= slider.maxValue)
+        {
+            LastScene.myLastScene = Application.loadedLevelName;
+            Application.LoadLevel("chodzenie");
+        }
     }
 }

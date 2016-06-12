@@ -173,17 +173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'New Text
-
-    New Text
-
-    New Text
-
-    New Text
-
-    New Text
-
-    New Text'
+  m_Text: "Jeej, uda\u0142o ci si\u0119 wygra\u0107 !"
 --- !u!222 &110104396
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -8,6 +8,14 @@ public class GhostMovePathInCode : MonoBehaviour {
 	public Rigidbody2D rb;
 
 	public Animator animator;
+
+    private static int podejscia = 2;
+
+    public static int Podejscia
+    {
+        get { return podejscia; }
+        set { podejscia = value; }
+    }
 	
 	void Start ()
 	{
@@ -296,10 +304,6 @@ public class GhostMovePathInCode : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-
-		
-		
-		
 		if  ((transform.position.x - waypoints[index].position.x > 0.01 || transform.position.x - waypoints[index].position.x <-0.01) ||
 		     (transform.position.y - waypoints[index].position.y > 0.01 || transform.position.y - waypoints[index].position.y < -0.01))
 			
@@ -318,9 +322,23 @@ public class GhostMovePathInCode : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D co)
 	{
 		if (co.tag == "PacMan") {
-			Destroy (co.gameObject);
-			Application.LoadLevel ("Menu_Scene");
-		}
-	}
+
+            Destroy(co.gameObject);
+
+            podejscia = podejscia - 1;
+
+            if (podejscia == 0)
+            {
+                LastScene.myLastScene = Application.loadedLevelName;
+                Application.LoadLevel("Credits");
+            }
+            else if (podejscia == 1)
+            {
+                LastScene.myLastScene = Application.loadedLevelName;
+                Application.LoadLevel("pacman");
+            }
+
+        }
+    }
 }
 

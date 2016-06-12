@@ -3,6 +3,17 @@ using System.Collections;
 
 public class Stats_Changing : MonoBehaviour {
 
+    void Start()
+    {
+        Stats.Cheating = 0;
+        Stats.Knowledge = 0;
+        Stats.Connections = 0;
+        Stats.Remaining = 15;
+        Stats.StartCheating = 0;
+        Stats.StartConnections = 0;
+        Stats.StartKnowledge = 0;
+    }
+
     public void KnowledgeUp()
     {
         if (Stats.Remaining > 0 && Stats.Knowledge < Stats.Max)
@@ -65,8 +76,8 @@ public class Stats_Changing : MonoBehaviour {
             Stats.StartCheating = Stats.Cheating;
             Stats.StartConnections = Stats.Connections;
             Stats.StartKnowledge = Stats.Knowledge;
-
-			Application.LoadLevel ("pacman");
+            
+			Application.LoadLevel ("chodzenie");
         }
     }
 }

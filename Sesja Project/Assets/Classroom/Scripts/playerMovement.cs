@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playerMovement : MonoBehaviour {
 
-    public int speed = 5;
+    public float speed = (float)Stats.Connections / 10 + 5;
 
     // Use this for initialization
     void Start () {

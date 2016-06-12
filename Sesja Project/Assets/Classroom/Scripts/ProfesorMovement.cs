@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class ProfesorMovement : MonoBehaviour {
 
     public Transform Profesor;
-    public float speed=1;
+    public float speed= 1 + (float)Stats.Knowledge / 100f;
     //public float rotationSpeed = 2.0f;
     public Transform[] Points;
 
@@ -32,6 +32,8 @@ public class ProfesorMovement : MonoBehaviour {
         point = Points[0];
         RotateToward();
 
+        
+
     }
     void Update()
     {
@@ -55,7 +57,6 @@ public class ProfesorMovement : MonoBehaviour {
             if (angle + 2 * waiting <= 359)
             {
                 waiting++;
-                Debug.Log(waiting);
                 Profesor.localRotation = Quaternion.Euler(new Vector3(angle + 2 * waiting, 90, 90));
             }
             else rotate = true;
@@ -112,9 +113,6 @@ public class ProfesorMovement : MonoBehaviour {
     void RotateToward()
     {
 
-
-        Debug.Log(Profesor.position +"  "+ point.position );
-
         if (Profesor.position.x > point.position.x ) { Profesor.localRotation = Quaternion.Euler(new Vector3(180, 90, 90)); direction = 2; }
         if (Profesor.position.x < point.position.x ) { Profesor.localRotation = Quaternion.Euler(new Vector3(0, 90, 90)); direction = 0; }
         if (Profesor.position.y < point.position.y) { Profesor.localRotation = Quaternion.Euler(new Vector3(270, 90, 90)); direction = 3; }
@@ -135,6 +133,10 @@ public class ProfesorMovement : MonoBehaviour {
         {
             if (item.position.x==point.position.x || item.position.y == point.position.y)
             {
+                if (item.position.y == point.position.y)
+                {
+                    listPoints.Add(item);
+                }
                 listPoints.Add(item);
             }
         }

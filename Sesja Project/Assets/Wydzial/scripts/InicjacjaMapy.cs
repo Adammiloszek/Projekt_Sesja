@@ -50,7 +50,6 @@ public class InicjacjaMapy : MonoBehaviour
         }
         tabPokoji[losP].transform.Find("Portal").transform.gameObject.SetActive(true);
         tabPokoji[losP].transform.Find("bonus").transform.gameObject.SetActive(false);
-        dajBonusyPokojom();
 
     }
 }

@@ -5,10 +5,23 @@ using System;
 
 public class Timer : MonoBehaviour {
 
-    private const float startTime = 45;
+    //private const float startTime = 45;
+
+    private static float startTime = 45;
     private static float timer = 0;
     private static float bonusTime;
 
+    public static float StartTime
+    {
+        get { return startTime; }
+        set { startTime = value; }
+    }
+
+    public static float SetTimer
+    {
+        get { return timer; }
+        set { timer = value; }
+    }
 
     private static bool updateON;
 
@@ -39,12 +52,10 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
 
         if (updateON)
         {
             timer -= Time.deltaTime;
-            //Debug.Log(timer);
 
             GameObject textInfo = GameObject.Find("Text (3)");
 

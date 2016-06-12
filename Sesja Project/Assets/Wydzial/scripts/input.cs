@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class input : MonoBehaviour {
 
@@ -12,6 +13,15 @@ public class input : MonoBehaviour {
     private float minutesToGo;
     private float secondsToGo;
     public Text timeCounter;
+
+    private static List<string> sceneTab = new List<string> { "classroom_startowa", "scena_startowa", "pacman" };
+
+    public List<string> SceneTab
+    {
+        get { return sceneTab; }
+        set { sceneTab = value; }
+    }
+
 
     public void StartTimer(float from)
     {
@@ -54,10 +64,44 @@ public class input : MonoBehaviour {
             yield return new WaitForSeconds(0.2f);
         }
     }
-
-    // Use this for initialization
+    
     void Start ()
     {
+
+        // Rozpoczynamy nową grę - resetujemy ustawienia.
+        if (LastScene.myLastScene == "Menu_Scene")
+        {
+            // czysczenie listy dostępnych scen
+            SceneTab = new List<string> { "classroom_startowa", "scena_startowa", "pacman" };
+
+            // czyszczenie statystyk
+                // --- odbywa sie w Stats_Changing w Start();
+
+            // czyszczenie arkanoida
+            Timer.StartTime = 45;
+            Timer.SetTimer = 0;
+            CheckResult.UpdateON = true;
+            Timer.UpdateON = true;
+            Timer.SetTimer = 0;
+            Timer.StartTime = 45;
+            Main.Podejscia = 2;
+            Main.Punkty = 0;
+            Main.Zycia = 3;
+            Main.Bloki = 0;
+                
+
+            // czyszczenie pacmana
+            GhostMovePathInCode.Podejscia = 2;
+
+            // czyszczenie classroom
+            FovController.Podejscia = 2;
+        }
+
+        if (sceneTab.Count == 0)
+        {
+            Debug.Log("GAME COMPLETED");
+            Application.LoadLevel("CreditsWin");
+        }
 
     }
 
@@ -70,6 +114,19 @@ public class input : MonoBehaviour {
             //tutaj dodaj so jeszcze ma się dziać kiedy wejdziemy w bonus
             //na razie jedynie zostaje zniszczony :O
         }
+
+        if (coll.gameObject.name == "portal")
+        {
+            System.Random rand = new System.Random();
+
+            string tmp = sceneTab[rand.Next(0, sceneTab.Count)];
+
+            sceneTab.Remove(tmp);
+
+            Application.LoadLevel(tmp);
+
+        }
+
     }
 
 

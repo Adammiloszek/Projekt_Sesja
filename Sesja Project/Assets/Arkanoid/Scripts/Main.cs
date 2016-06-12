@@ -22,7 +22,12 @@ public static class Main  {
     private static GameObject ball;
 
 
-
+    public static int Podejscia
+    {
+        get { return podejscia; }
+        set { podejscia = value; }
+    }
+    
     public static int Punkty
     {
         get { return punkty; }
@@ -112,6 +117,9 @@ public static class Main  {
             * SceneManager.LoadScene("");
             */
 
+            LastScene.myLastScene = Application.loadedLevelName;
+            SceneManager.LoadScene("chodzenie");
+
         }
     }
 
@@ -169,6 +177,9 @@ public static class Main  {
                  * 
                  * 
                 */
+
+                Application.LoadLevel("Credits");
+
             }
 
         }
@@ -228,6 +239,7 @@ public static class Main  {
             {
                 zycia--;
                 SceneManager.LoadScene("scena_koncowa");
+                Debug.Log("pierwszy if");
             }
             else if (aktywnaScena == "scena")
             {
@@ -243,6 +255,7 @@ public static class Main  {
             {
                 Timer.UpdateON = false;
                 SceneManager.LoadScene("scena_koncowa");
+                Debug.Log("drugi if");
             }
         }
     }
