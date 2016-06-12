@@ -27,7 +27,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412162}
-  - 58: {fileID: 5884148}
+  - 58: {fileID: 5893956}
   - 50: {fileID: 5038154}
   - 114: {fileID: 11450150}
   m_Layer: 9
@@ -59,8 +59,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.60611033, y: 0.05352553, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00074306014, w: 0.99999976}
+  m_LocalPosition: {x: -0.289, y: 39.305, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 454892}
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 163752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 0}
   m_Children: []
   m_Father: {fileID: 412162}
   m_RootOrder: 0
@@ -111,7 +111,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.4100819
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -142,7 +142,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &5884148
+--- !u!58 &5893956
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -155,7 +155,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.14698634
 --- !u!81 &8101150
 AudioListener:
   m_ObjectHideFlags: 1
@@ -183,6 +183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   postac: {fileID: 139372}
   speed: 0.1
+  timeLeftYou: 300
+  stopCounter: 1
+  timeCounter: {fileID: 0}
 --- !u!124 &12465442
 Behaviour:
   m_ObjectHideFlags: 1
