@@ -1376,6 +1376,7 @@ GameObject:
   - 224: {fileID: 733064275}
   - 222: {fileID: 733064277}
   - 114: {fileID: 733064276}
+  - 114: {fileID: 733064278}
   m_Layer: 5
   m_Name: timeCounter
   m_TagString: Untagged
@@ -1439,6 +1440,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 733064274}
+--- !u!114 &733064278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733064274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be3b4e9ca60ea64f8f7e2eab5088b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeft: 300
+  textarea: {fileID: 733064276}
 --- !u!1001 &741286661
 Prefab:
   m_ObjectHideFlags: 0
@@ -3190,7 +3204,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
