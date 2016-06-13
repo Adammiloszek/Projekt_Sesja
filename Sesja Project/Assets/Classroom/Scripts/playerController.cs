@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour {
 
-    public float cheatingSpeed = (float)Stats.Cheating / 500f + 0.02f;
+    private float cheatingSpeed = (float)Stats.Cheating / 500f + 0.02f;
     public Slider slider;
     private bool studentInRange;
     private float currentPoints;

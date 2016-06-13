@@ -44,11 +44,11 @@ public class InicjacjaMapy : MonoBehaviour
         int losP = x.Next(0, tabPokoji.Length);
         foreach (Transform pom in tabPokoji) 
         {
-            Transform pomPortal = pom.transform.Find("Portal").transform;
+            Transform pomPortal = pom.transform.Find("portal").transform;
             pomPortal.gameObject.SetActive(false);
             DajBonuys(x, pom, 50);
         }
-        tabPokoji[losP].transform.Find("Portal").transform.gameObject.SetActive(true);
+        tabPokoji[losP].transform.Find("portal").transform.gameObject.SetActive(true);
         tabPokoji[losP].transform.Find("bonus").transform.gameObject.SetActive(false);
 
     }

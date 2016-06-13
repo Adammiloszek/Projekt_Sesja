@@ -302,7 +302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d07f8280177c74c89ce00a1f137a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheatingSpeed: 0.5
   slider: {fileID: 1802187840}
 --- !u!1001 &174515530
 Prefab:
