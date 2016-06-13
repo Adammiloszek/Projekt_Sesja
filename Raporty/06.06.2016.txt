@@ -1,0 +1,46 @@
+﻿06.06.2016
+Grupa 1:
+- Zakończenie prac nad przydzieloną częścią projektu
+
+Ola Ciok:
+- Oddanie raportu w terminie
+
+Grupa 2:
+Łukasz Tyczyński:
+- Zrobienie grafik wydziałowych
+- Własny art wesołego ludka - zwiększanie morale grupy
+
+Jacek Dziubiński:
+- Oraganizowanie merge'u wszystkich części projektu
+- Oddanie raportu w terminie
+
+Kamil Witkowski:
+- Zmniejszenie ludzika
+
+Grupa 3:
+- Przygotowywanie logiki gry po merge'u
+
+Adrian Wojciechowski:
+- Oddanie raportu w terminie
+
+Grupa 4:
+- Kontynuacja implementacji gry
+- Poprawienie klasy ze statystykami postaci
+- Stworzenie ekranu wyboru statystyk
+- Dodanie pliku gitignore
+- Przygotowanie brancha z grą Arkanoid do merge'a
+
+Mateusz Jaworski:
+- Oddanie raportu w terminie
+
+Testerzy:
+- Przeprowadzanie testów na pojedynczych częściach gry
+- Sprawdzanie poszczególnych schematów rozgrywki po wprowadzanych zmianach
+
+Krzysztof Osial:
+- Oddanie raportu w terminie
+
+Grafik:
+- Skończono grafiki kampusu
+- Przygotowywanie grafik wnętrz budynków
+- Oddanie raportu w terminie
