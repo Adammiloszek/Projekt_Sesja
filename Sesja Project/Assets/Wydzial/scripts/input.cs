@@ -8,12 +8,6 @@ public class input : MonoBehaviour {
     public GameObject postac;
     public float speed = 0.1f;
 
-    public float timeLeftYou = 300.0f;
-    public bool stopCounter = true;
-    private float minutesToGo;
-    private float secondsToGo;
-    public Text timeCounter;
-
     private static List<string> sceneTab = new List<string> { "classroom_startowa", "scena_startowa", "pacman" };
 
     public List<string> SceneTab
@@ -22,51 +16,14 @@ public class input : MonoBehaviour {
         set { sceneTab = value; }
     }
 
+    wydzialTimer counterScript;
 
-    public void StartTimer(float from)
-    {
-        stopCounter = false;
-        timeLeftYou = from;
-        UpdateTimer();
-        StartCoroutine(updateCoroutine());
-    }
-
-    void UpdateTimer()
-    {
-        if (stopCounter)
-        {
-            return;
-        }
-
-        timeLeftYou -= Time.deltaTime;
-        minutesToGo = Mathf.Floor(timeLeftYou / 60);
-        secondsToGo = timeLeftYou % 60;
-
-        if (secondsToGo > 59)
-        {
-            secondsToGo = 59;
-        }  
-
-        if (minutesToGo < 0)
-        {
-            stopCounter = true;
-            minutesToGo = 0;
-            secondsToGo = 0;
-        }
-    }
-
-    private IEnumerator updateCoroutine()
-    {
-        while (!stopCounter)
-        {
-            timeCounter = gameObject.GetComponent<Text>();
-            timeCounter.text = string.Format("{0:0}:{1:00}", minutesToGo, secondsToGo);
-            yield return new WaitForSeconds(0.2f);
-        }
-    }
-    
     void Start ()
     {
+        // init timer
+        GameObject counter = GameObject.Find("timeCounter");
+        counterScript = counter.GetComponent<wydzialTimer>();
+        counterScript.timeLeft = 20.0f;
 
         // Rozpoczynamy nową grę - resetujemy ustawienia.
         if (LastScene.myLastScene == "Menu_Scene")
@@ -88,7 +45,7 @@ public class input : MonoBehaviour {
             Main.Punkty = 0;
             Main.Zycia = 3;
             Main.Bloki = 0;
-                
+
 
             // czyszczenie pacmana
             GhostMovePathInCode.Podejscia = 2;
@@ -110,7 +67,7 @@ public class input : MonoBehaviour {
         if (coll.gameObject.name == "bonus")
         {
             Destroy(coll.gameObject);
-            StartTimer(300);
+            counterScript.timeLeft += 10.0f;
             //tutaj dodaj so jeszcze ma się dziać kiedy wejdziemy w bonus
             //na razie jedynie zostaje zniszczony :O
         }
