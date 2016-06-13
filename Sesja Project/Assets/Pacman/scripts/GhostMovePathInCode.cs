@@ -92,8 +92,8 @@ public class GhostMovePathInCode : MonoBehaviour {
 			Debug.Log("blinky ");
             waypoints[0] = GameObject.Find("Waypoint88").transform;
             waypoints[1] = GameObject.Find("Waypoint25").transform;
-            waypoints[2] = GameObject.Find("Waypoint82").transform;
-            waypoints[3] = GameObject.Find("Waypoint78").transform;
+            waypoints[2] = GameObject.Find("Waypoint44").transform;
+            waypoints[3] = GameObject.Find("Waypoint45").transform;
             waypoints[4] = GameObject.Find("Waypoint45").transform;
             waypoints[5] = GameObject.Find("Waypoint40").transform;
             waypoints[6] = GameObject.Find("Waypoint57").transform;

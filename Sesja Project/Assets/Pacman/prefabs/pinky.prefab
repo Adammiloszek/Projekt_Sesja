@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5023596}
   animator: {fileID: 9509206}
-  speed: 0.3
+  speed: 0.2
 --- !u!212 &21281340
 SpriteRenderer:
   m_ObjectHideFlags: 1
