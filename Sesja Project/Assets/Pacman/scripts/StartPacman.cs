@@ -20,10 +20,16 @@ public class StartPacman : MonoBehaviour
 
         if (Input.GetKeyDown("return"))
         {
-            if (scena == "startowa" || scena == "powtorka")
-                SceneManager.LoadScene("pacman");
-            else if (scena == "pacman")
-                SceneManager.LoadScene("umrzyj");
+
+		
+
+			if (scena == "startowa" || scena == "powtorka") {
+				LastScene.myLastScene = Application.loadedLevelName;
+				SceneManager.LoadScene ("pacman");
+			} else if (scena == "pacman") {
+				LastScene.myLastScene = Application.loadedLevelName;
+				SceneManager.LoadScene ("umrzyj");
+			}
             else if (scena == "umrzyj")
             {
                 LastScene.myLastScene = Application.loadedLevelName;
