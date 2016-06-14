@@ -10,7 +10,7 @@ public class CheckIfGameEnded : MonoBehaviour {
 		if (pacdots == null || pacdots.Length <= 0) {
 
             LastScene.myLastScene = Application.loadedLevelName;
-            Application.LoadLevel("chodzenie");
+            Application.LoadLevel("umrzyj");
 
 		}
 
