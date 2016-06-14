@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GhostMovePathInCode : MonoBehaviour {
 
@@ -329,13 +330,23 @@ public class GhostMovePathInCode : MonoBehaviour {
 
             if (podejscia == 0)
             {
-                LastScene.myLastScene = Application.loadedLevelName;
-                Application.LoadLevel("Credits");
+                //LastScene.myLastScene = Application.loadedLevelName;
+                //Application.LoadLevel("Credits");
+                GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+                pacdot.punkty = 320 - pacdots.Length;
+                SceneManager.LoadScene("umrzyj");
             }
             else if (podejscia == 1)
             {
-                LastScene.myLastScene = Application.loadedLevelName;
-                Application.LoadLevel("pacman");
+                //LastScene.myLastScene = Application.loadedLevelName;
+                //Application.LoadLevel("smierc");
+                GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+                pacdot.punkty = 320 - pacdots.Length; 
+                if (pacdots.Length > 160)
+                    SceneManager.LoadScene("powtorka");
+                else 
+                    SceneManager.LoadScene("umrzyj");
+                    
             }
 
         }

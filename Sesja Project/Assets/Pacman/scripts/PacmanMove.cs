@@ -8,6 +8,7 @@ public class PacmanMove : MonoBehaviour
 	GameObject[] ghosts;
 	public GameObject pacdot;	
 	private GameObject[] pacdots;	
+    
 
     bool waiting;
  
@@ -115,7 +116,7 @@ public class PacmanMove : MonoBehaviour
         {
 
             GameObject[] found = GameObject.FindGameObjectsWithTag("pacdot");
-            for (int i = 0; i < 100; ++i)
+            for (int i = 0; i < 50; ++i)
             {
 				if (found.Length > 0) {
 					Destroy (found [Random.Range (0, found.Length)]);
