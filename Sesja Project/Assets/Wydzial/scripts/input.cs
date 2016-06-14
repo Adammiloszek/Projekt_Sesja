@@ -8,7 +8,7 @@ public class input : MonoBehaviour {
     public GameObject postac;
     public float speed = 0.1f;
 
-    private static List<string> sceneTab = new List<string> { "classroom_startowa", "scena_startowa", "pacman" };
+    private static List<string> sceneTab = new List<string> { "classroom_startowa", "scena_startowa", "startowa" };
 
     public List<string> SceneTab
     {
@@ -29,7 +29,7 @@ public class input : MonoBehaviour {
         if (LastScene.myLastScene == "Menu_Scene")
         {
             // czysczenie listy dostępnych scen
-            SceneTab = new List<string> { "classroom_startowa", "scena_startowa", "pacman" };
+            SceneTab = new List<string> { "classroom_startowa", "scena_startowa", "startowa" };
 
             // czyszczenie statystyk
                 // --- odbywa sie w Stats_Changing w Start();
