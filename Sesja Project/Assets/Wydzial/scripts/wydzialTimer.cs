@@ -6,9 +6,10 @@ public class wydzialTimer : MonoBehaviour {
 
 	public float timeLeft = 300.0f;
 	public Text textarea;
+    public Text warningMessage;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
 	}
 
@@ -16,9 +17,19 @@ public class wydzialTimer : MonoBehaviour {
 	{
 			timeLeft -= Time.deltaTime;
 			textarea.text = Mathf.Round(timeLeft).ToString();
-			if(timeLeft < 0)
+            int timeCounterInt = System.Int32.Parse(textarea.text);
+            if (timeCounterInt <= 10 && timeCounterInt >= 0)
+            {
+                warningMessage = gameObject.GetComponent<Text>();
+                warningMessage.text = "O nie! Nie zd¹¿ysz na egzamin! Pospiesz siê!";
+            }
+            else if (timeLeft < 0)
 			{
-					Application.LoadLevel("gameOver");
+				Application.LoadLevel("gameOver");
 			}
+            else
+            {
+                return;
+            }
 	}
 }
