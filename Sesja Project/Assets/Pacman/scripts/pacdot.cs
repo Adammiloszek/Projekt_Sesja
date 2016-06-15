@@ -2,11 +2,9 @@
 using System.Collections;
 
 public class pacdot : MonoBehaviour {
-public static int punkty = 1550;
+
 	void OnTriggerEnter2D(Collider2D co)
     {
-
-
 		if (co.name == "pacman")
         {
 			Destroy(gameObject);

@@ -19,9 +19,7 @@ public class StartPacman : MonoBehaviour
     {
 
         if (Input.GetKeyDown("return"))
-        {
-
-		
+		{
 
 			if (scena == "startowa" || scena == "powtorka") {
 				LastScene.myLastScene = Application.loadedLevelName;

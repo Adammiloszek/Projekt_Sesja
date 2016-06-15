@@ -10,6 +10,9 @@ public class GhostMovePathInCode : MonoBehaviour {
 
 	public Animator animator;
 
+
+
+
     private static int podejscia = 2;
 
     public static int Podejscia
@@ -20,6 +23,9 @@ public class GhostMovePathInCode : MonoBehaviour {
 	
 	void Start ()
 	{
+
+
+
 		rb = GetComponent<Rigidbody2D> ();
 
 		if (this.gameObject.name == "inky(Clone)") {
@@ -332,20 +338,19 @@ public class GhostMovePathInCode : MonoBehaviour {
             {
                 //LastScene.myLastScene = Application.loadedLevelName;
                 //Application.LoadLevel("Credits");
-                GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
-                pacdot.punkty = 320 - pacdots.Length;
+
                 SceneManager.LoadScene("umrzyj");
             }
             else if (podejscia == 1)
             {
                 //LastScene.myLastScene = Application.loadedLevelName;
                 //Application.LoadLevel("smierc");
-                GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
-                pacdot.punkty = 320 - pacdots.Length; 
-                if (pacdots.Length > 160)
+				int pacdotsLeftCount = GameObject.FindGameObjectsWithTag("pacdot").Length;
+
+				if (countDots.currentScore < countDots.allPacdotsCount /2)
                     SceneManager.LoadScene("powtorka");
                 else 
-                    SceneManager.LoadScene("umrzyj");
+                    SceneManager.LoadScene("umrzyj");	// zaliczyles
                     
             }
 

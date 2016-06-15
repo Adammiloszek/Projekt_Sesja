@@ -10,13 +10,14 @@ public class umrzenie : MonoBehaviour {
     void Start()
     {
         komponent = GetComponent<Text>();
-        komponent.text = "Punkty: " + pacdot.punkty.ToString();
+		komponent.text = "Punkty: " + countDots.currentScore.ToString ();
     }
 
     void Update()
     {
-        float punkty = pacdot.punkty;
-        float proc = punkty / 320;
+		float punkty = countDots.currentScore;
+		float proc = punkty / countDots.allPacdotsCount;
+		string punktyAsString = punkty.ToString ();
         string ocena = "2";
         if (proc > 0.5)
             ocena = "3";
@@ -28,6 +29,6 @@ public class umrzenie : MonoBehaviour {
             ocena = "4,5";
         if (proc > 0.9)
             ocena = "5";
-        komponent.text = "Uzyskałeś " + punkty.ToString() + "/320 punktów z egzaminu. Twoja ocena to " + ocena + ".";
+		komponent.text = "Uzyskałeś " + punktyAsString + " / " + countDots.allPacdotsCount.ToString() + "punktów z egzaminu. Twoja ocena to " + ocena + ".";
     }
 }
