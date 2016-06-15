@@ -21,7 +21,7 @@ public class introMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//move the camera airly
-		float cameraStep = 4f * Time.deltaTime;
+		float cameraStep = 3f * Time.deltaTime;
 		camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3(4.0f,8.0f,0.0f), cameraStep);
 
 
