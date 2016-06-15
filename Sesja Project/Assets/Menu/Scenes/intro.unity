@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1097036966}
+  fadeSpeed: 1.5
 --- !u!212 &742804154
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -165,6 +166,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 946728515}
   - 212: {fileID: 946728514}
+  - 114: {fileID: 946728516}
   m_Layer: 0
   m_Name: kampus_concept (1)
   m_TagString: Untagged
@@ -214,6 +216,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &946728516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946728513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b25cd0f720c57b4bb446536544f325d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 2af5512c3df2d654592dbd63c5d3dcfb, type: 3}
+  fadeSpeed: 2
 --- !u!1 &1097036966
 GameObject:
   m_ObjectHideFlags: 0
