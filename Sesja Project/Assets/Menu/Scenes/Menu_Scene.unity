@@ -153,7 +153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: "Wyjd\u017A"
 --- !u!222 &81856315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: Graj
 --- !u!222 &693995608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: "Tw\xF3rcy"
 --- !u!222 &844873168
 CanvasRenderer:
   m_ObjectHideFlags: 0
