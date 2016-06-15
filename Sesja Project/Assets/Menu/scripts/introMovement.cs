@@ -16,8 +16,6 @@ public class introMovement : MonoBehaviour {
 	  nodes[1] = new Vector3(-0.06f,-6.61f,0.0f);
 	  nodes[2] = new Vector3(0.14f,-4.23f,0.0f);
 	  nodes[3] = new Vector3(8.37f,-4.17f,0.0f);
-
-		float fadeTime = GameObject.Find("wkampus_concept (1)").GetComponent<Fading>().BeginFade(1);
 	}
 
 	// Update is called once per frame
