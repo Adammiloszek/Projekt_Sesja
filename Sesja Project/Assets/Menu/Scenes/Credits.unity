@@ -139,7 +139,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -424, y: 178}
+  m_AnchoredPosition: {x: -582, y: 0}
   m_SizeDelta: {x: 506, y: 811}
   m_Pivot: {x: 0.5000002, y: 0.5}
 --- !u!114 &110104395
@@ -217,7 +217,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -376}
+  m_AnchoredPosition: {x: 0, y: -354}
   m_SizeDelta: {x: 623, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141416502
@@ -604,7 +604,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124022350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 1.15, z: 0}
+  m_LocalPosition: {x: 0.62, y: 0.78, z: 0}
   m_LocalScale: {x: 2.5411854, y: 2.8803136, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -717,7 +717,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 495}
+  m_AnchoredPosition: {x: 0, y: 379}
   m_SizeDelta: {x: 1208, y: 167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551317792
@@ -946,7 +946,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -981,7 +980,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 528, y: 178}
+  m_AnchoredPosition: {x: 599, y: 0}
   m_SizeDelta: {x: 506, y: 811}
   m_Pivot: {x: 0.5000002, y: 0.5}
 --- !u!114 &2072466813
