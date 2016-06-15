@@ -17,13 +17,18 @@ public class input : MonoBehaviour {
     }
 
     wydzialTimer counterScript;
+    wydzialWarning warningBox;
 
     void Start ()
     {
         // init timer
         GameObject counter = GameObject.Find("timeCounter");
         counterScript = counter.GetComponent<wydzialTimer>();
+        GameObject warning = GameObject.Find("Text");
+        warningBox = warning.GetComponent<wydzialWarning>();
         counterScript.timeLeft = 20.0f;
+        warningBox.Text.text = "";
+        Global.ifT = false;
 
         // Rozpoczynamy nową grę - resetujemy ustawienia.
         if (LastScene.myLastScene == "Menu_Scene")
