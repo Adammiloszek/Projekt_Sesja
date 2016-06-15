@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class umrzenie : MonoBehaviour {
 
+	public static string ocena = "2";
+
     Text komponent;
     
 
@@ -18,7 +20,7 @@ public class umrzenie : MonoBehaviour {
 		float punkty = countDots.currentScore;
 		float proc = punkty / countDots.allPacdotsCount;
 		string punktyAsString = punkty.ToString ();
-        string ocena = "2";
+       
         if (proc > 0.5)
             ocena = "3";
         if (proc > 0.6)

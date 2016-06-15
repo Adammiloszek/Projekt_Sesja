@@ -31,7 +31,12 @@ public class StartPacman : MonoBehaviour
             else if (scena == "umrzyj")
             {
                 LastScene.myLastScene = Application.loadedLevelName;
-                Application.LoadLevel("Credits");
+				if (umrzenie.ocena == "2") {
+					Application.LoadLevel("Credits");
+				} else {
+					Application.LoadLevel("chodzenie");
+				}
+               
             }
         }
     }
