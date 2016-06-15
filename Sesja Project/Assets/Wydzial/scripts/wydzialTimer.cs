@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -21,11 +21,12 @@ public class wydzialTimer : MonoBehaviour {
             if (timeCounterInt <= 10 && timeCounterInt >= 0)
             {
                 warningMessage = gameObject.GetComponent<Text>();
-                warningMessage.text = "O nie! Nie zd¹¿ysz na egzamin! Pospiesz siê!";
+                warningMessage.text = "O nie! Nie zdÄ…Å¼ysz na egzamin! Pospiesz siÄ™!";
             }
             else if (timeLeft < 0)
 			{
-				Application.LoadLevel("gameOver");
+                LastScene.myLastScene = Application.loadedLevelName;
+				Application.LoadLevel("Credits");
 			}
             else
             {
