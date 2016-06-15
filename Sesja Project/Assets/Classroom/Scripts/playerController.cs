@@ -43,7 +43,7 @@ public class playerController : MonoBehaviour {
         if (slider.value >= slider.maxValue)
         {
             LastScene.myLastScene = Application.loadedLevelName;
-            Application.LoadLevel("chodzenie");
+            Application.LoadLevel("classroom_wygrana");
         }
     }
 }

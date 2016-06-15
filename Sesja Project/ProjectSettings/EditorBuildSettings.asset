@@ -38,6 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Classroom/Scenes/classroom_koncowa.unity
   - enabled: 1
+    path: Assets/Classroom/Scenes/classroom_wygrana.unity
+  - enabled: 1
     path: Assets/Menu/Scenes/CreditsWin.unity
   - enabled: 1
     path: Assets/Pacman/umrzyj.unity

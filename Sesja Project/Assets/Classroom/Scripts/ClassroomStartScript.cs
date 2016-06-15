@@ -23,6 +23,8 @@ public class ClassroomStartScript: MonoBehaviour {
                 SceneManager.LoadScene("classroom");
             else if (scena == "classroom_koncowa")
                 SceneManager.LoadScene("Credits");
+            else if (scena == "classroom_wygrana")
+                SceneManager.LoadScene("chodzenie");
         }
 	}
 }
